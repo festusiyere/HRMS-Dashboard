@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>BMAC - HR Payroll</title>
+    
+    <link rel="shortcut icon" href="assets/icons/favicon.png" />
+
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- End layout styles -->
+
+</head>
+<body>
+    <div class="main-wrapper">
+
+        <!-- Sidebar Begins -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-toggler">
+                    <div class="sidebar-toggler-box">
+                        <div class="sidebar-toggler-icon"></div>
+                    </div>
+                </div>
+                <div class="sidebar-logo">
+                    <a href="index.html" class="sidebar-brand">
+                        <img src="assets/images/logo.png" alt="BMAC">
+                    </a>
+                </div>
+                <button id="nav-toggler-close" class="nav-toggler-close">
+                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2.16116" y="0.539848" width="28" height="3" rx="1.5" transform="rotate(45 2.16116 0.539848)" fill="#047B40"></rect>
+                        <rect x="0.039856" y="20.3388" width="28" height="3" rx="1.5" transform="rotate(-45 0.039856 20.3388)" fill="#047B40"></rect>
+                    </svg>
+                </button>
+            </div>
+            <div class="sidebar-body">
+                <ul class="nav">
+                    <li class="nav-item ">
+                        <a href="index.html" class="nav-link active">
+                            <i class="link-icon" data-feather="home"></i>
+                            <span class="link-title">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="link-icon" data-feather="search"></i>
+                            <span class="link-title">Recruitment</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="link-icon" data-feather="users"></i>
+                            <span class="link-title">Employee Mangement</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="link-icon" data-feather="trello"></i>
+                            <span class="link-title">Performance Management</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="link-icon" data-feather="clock"></i>
+                            <span class="link-title">Time and Attendance</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="link-icon" data-feather="x-square"></i>
+                            <span class="link-title">Absence and Leave</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="link-icon" data-feather="trending-up"></i>
+                            <span class="link-title">Training and Development</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="link-icon" data-feather="book-open"></i>
+                            <span class="link-title">Payroll Management </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="link-icon" data-feather="message-square"></i>
+                            <span class="link-title">Message</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="link-icon" data-feather="settings"></i>
+                            <span class="link-title">Settings</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="link-icon" data-feather="archive"></i>
+                            <span class="link-title">Reports</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <!-- Sidebar Ends -->
+
+
+        <div class="page-wrapper">
+
+            <!-- Navbar Begins -->
+            <nav class="navbar">
+                <div class="sidebar-toggler mobile">
+                    <div class="sidebar-toggler-box">
+                        <div class="sidebar-toggler-icon"></div>
+                    </div>
+                </div>
+                <div class="navbar-content">
+                    <ul class="navbar-nav">
+                        <li class="nav-item nav-company">
+                            <div>Sam Afemikhe Firm</div>
+                        </li>
+                        <li class="nav-item dropdown nav-messages">
+                            <a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i data-feather="mail"></i>
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="44" height="44" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                                    <polyline points="3 7 12 13 21 7" />
+                                  </svg> -->
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="messageDropdown">
+                                <div class="dropdown-header d-flex align-items-center justify-content-between">
+                                    <p class="mb-0 font-weight-medium">9 New Messages</p>
+                                    <a href="javascript:;" class="text-muted">Clear all</a>
+                                </div>
+                                <div class="dropdown-body">
+                                    <a href="javascript:;" class="dropdown-item">
+                                        <div class="figure">
+                                            <img src="assets/images/faces/face6.jpg" alt="userr">
+                                        </div>
+                                        <div class="content">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p>Leonardo Payne</p>
+                                                <p class="sub-text text-muted">2 min ago</p>
+                                            </div>
+                                            <p class="sub-text text-muted">Project status</p>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="dropdown-item">
+                                        <div class="figure">
+                                            <img src="assets/images/faces/face6.jpg" alt="userr">
+                                        </div>
+                                        <div class="content">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p>Carl Henson</p>
+                                                <p class="sub-text text-muted">30 min ago</p>
+                                            </div>
+                                            <p class="sub-text text-muted">Client meeting</p>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="dropdown-item">
+                                        <div class="figure">
+                                            <img src="assets/images/faces/face6.jpg" alt="userr">
+                                        </div>
+                                        <div class="content">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p>Jensen Combs</p>
+                                                <p class="sub-text text-muted">1 hrs ago</p>
+                                            </div>
+                                            <p class="sub-text text-muted">Project updates</p>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="dropdown-item">
+                                        <div class="figure">
+                                            <img src="assets/images/faces/face6.jpg" alt="userr">
+                                        </div>
+                                        <div class="content">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p>Amiah Burton</p>
+                                                <p class="sub-text text-muted">2 hrs ago</p>
+                                            </div>
+                                            <p class="sub-text text-muted">Project deadline</p>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="dropdown-item">
+                                        <div class="figure">
+                                            <img src="assets/images/faces/face6.jpg" alt="userr">
+                                        </div>
+                                        <div class="content">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p>Yaretzi Mayo</p>
+                                                <p class="sub-text text-muted">5 hr ago</p>
+                                            </div>
+                                            <p class="sub-text text-muted">New record</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="dropdown-footer d-flex align-items-center justify-content-center">
+                                    <a href="javascript:;">View all</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown nav-notifications">
+                            <a class="nav-link dropdown-toggle" href="#" id="notificationDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i data-feather="bell"></i>
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bell" width="44" height="44" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <path d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
+                                    <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+                                  </svg> -->
+                                <div class="indicator">
+                                    <!-- <div class="circle"></div> -->
+                                </div>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="notificationDropdown">
+                                <div class="dropdown-header d-flex align-items-center justify-content-between">
+                                    <p class="mb-0 font-weight-medium">6 New Notifications</p>
+                                    <a href="javascript:;" class="text-muted">Clear all</a>
+                                </div>
+                                <div class="dropdown-body">
+                                    <a href="javascript:;" class="dropdown-item">
+                                        <div class="icon">
+                                            <i data-feather="user-plus"></i>
+                                        </div>
+                                        <div class="content">
+                                            <p>New customer registered</p>
+                                            <p class="sub-text text-muted">2 sec ago</p>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="dropdown-item">
+                                        <div class="icon">
+                                            <i data-feather="gift"></i>
+                                        </div>
+                                        <div class="content">
+                                            <p>New Order Recieved</p>
+                                            <p class="sub-text text-muted">30 min ago</p>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="dropdown-item">
+                                        <div class="icon">
+                                            <i data-feather="alert-circle"></i>
+                                        </div>
+                                        <div class="content">
+                                            <p>Server Limit Reached!</p>
+                                            <p class="sub-text text-muted">1 hrs ago</p>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="dropdown-item">
+                                        <div class="icon">
+                                            <i data-feather="layers"></i>
+                                        </div>
+                                        <div class="content">
+                                            <p>Apps are ready for update</p>
+                                            <p class="sub-text text-muted">5 hrs ago</p>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="dropdown-item">
+                                        <div class="icon">
+                                            <i data-feather="download"></i>
+                                        </div>
+                                        <div class="content">
+                                            <p>Download completed</p>
+                                            <p class="sub-text text-muted">6 hrs ago</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="dropdown-footer d-flex align-items-center justify-content-center">
+                                    <a href="javascript:;">View all</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown nav-profile">
+                            <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="assets/icons/user.png" class="user-image" alt="profile">
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="profileDropdown">
+                                <div class="dropdown-header d-flex flex-column align-items-center">
+                                    <div class="figure mb-3">
+                                        <img src="assets/images/faces/face6.jpg" alt="">
+                                    </div>
+                                    <div class="info text-center">
+                                        <p class="name font-weight-bold mb-0">Amiah Burton</p>
+                                        <p class="email text-muted mb-3">amiahburton@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="dropdown-body">
+                                    <ul class="profile-nav p-0 pt-3">
+                                        <li class="nav-item">
+                                            <a href="pages/general/profile.html" class="nav-link">
+                                                <i data-feather="user"></i>
+                                                <span>Profile</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="javascript:;" class="nav-link">
+                                                <i data-feather="edit"></i>
+                                                <span>Edit Profile</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="javascript:;" class="nav-link">
+                                                <i data-feather="log-out"></i>
+                                                <span>Log Out</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Navbar Ends -->
+
+            <!-- Page Contents Begin -->
+            <div class="page-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae itaque iure est sint? Ipsum veritatis voluptas nesciunt perspiciatis earum, enim sit. Eius necessitatibus adipisci distinctio ducimus nobis reprehenderit possimus ipsam commodi laboriosam! At recusandae temporibus corporis, consequatur veniam quisquam cumque reiciendis sit accusamus quis quidem fugiat nam obcaecati vitae quibusdam facilis hic nisi ab omnis, quas nihil porro repudiandae quod officiis? Ab aspernatur animi, perspiciatis voluptatem vel maiores magnam sint odio, deserunt a voluptate maxime voluptatum natus tempore? Obcaecati ea sint et voluptatem autem excepturi reiciendis, quae incidunt pariatur in? Distinctio eaque magni cum quo officiis nihil quam recusandae consequuntur ea tempore. Fuga, excepturi eaque? Porro eos at quis temporibus animi, ad, quasi sunt cumque numquam labore fugit aliquam ullam corporis, in voluptatem reprehenderit? Corrupti repellat illum modi alias libero voluptatibus sapiente ratione quis voluptate! Vero, tenetur perferendis? Autem, porro officia fuga enim voluptatem officiis nemo iste alias voluptates quos veritatis dignissimos, aut odio inventore? Iste magni temporibus voluptatum. Eaque fuga provident magnam. Fugit commodi numquam exercitationem quos consequuntur, omnis, nesciunt reprehenderit at ullam temporibus quis et tempore doloremque eligendi. Incidunt aspernatur possimus consectetur impedit. Aspernatur provident praesentium quasi, repudiandae hic accusamus amet, error voluptatum eos veniam sunt, quidem quam! Natus rem tenetur omnis aperiam assumenda asperiores temporibus eos reprehenderit accusantium. Officia laudantium molestias pariatur aperiam, mollitia sapiente corrupti. Harum et nisi numquam eum ipsam reprehenderit quis, quo sapiente, aspernatur laboriosam iusto voluptates fugit debitis sint ad accusamus impedit at eveniet repudiandae facilis perferendis quos. Quis necessitatibus commodi excepturi ullam veritatis rerum aspernatur eveniet, corporis laborum repellat est voluptas architecto ipsum, delectus odit maxime consequatur reiciendis! Quam amet laboriosam architecto quisquam fuga modi eos officia facilis cumque praesentium sequi voluptatum sint eaque odit, tempore minima impedit ipsa est. Repudiandae maiores accusantium voluptatum harum consectetur eaque atque praesentium repellendus, ut deserunt vel numquam fugiat quas et, totam fugit. Doloribus error nesciunt alias, et maiores dolores facere, in nulla suscipit cum voluptatum! Assumenda corrupti eum nulla, accusantium incidunt facere et a in. Incidunt quibusdam eaque nostrum iusto consequatur voluptatibus vero pariatur cumque? Deleniti earum culpa beatae aspernatur nostrum perspiciatis error aliquam ex id pariatur nihil minima numquam nulla architecto non rerum expedita voluptate, eaque officia ullam reiciendis exercitationem saepe enim qui. Quae dolore obcaecati doloremque rerum culpa corporis dolor quidem, eaque amet reiciendis possimus similique cum eos neque placeat cupiditate odio fugit dicta! Assumenda corporis quo explicabo sed repellendus consectetur voluptatibus!
+            </div>
+            <!-- Page Contents Ends -->
+
+
+            <!-- Footer Begins -->
+            <footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-center">
+                <p class="text-muted text-center text-md-left">Copyright © 2019 <a href="https://ikooba.com/"
+                        target="_blank">Ikooba Technologies</a>.</p>
+            </footer>
+            <!-- Footer ends -->
+
+
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/perfect-scrollbar.js"></script>
+    <script src="assets/js/feather.js"></script>
+
+    <!-- Custom Script -->
+    <script src="assets/js/main.js"></script>
+
+</body>    
+</html>
