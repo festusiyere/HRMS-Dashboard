@@ -6,6 +6,7 @@
       const footer = $('footer');
       const sidebar = $('.sidebar');
       const navbar = $('.navbar').not('.top-navbar');
+      const innerNav = $('.inner-nav .nav');
 
     //   Initializing feather icon
       feather.replace();
@@ -126,12 +127,11 @@
       })
   
       $(window).scroll(function() {
-        if(window.matchMedia('(min-width: 992px)').matches) {
-          var header = $('.horizontal-menu');
-          if ($(window).scrollTop() >= 60) {
-            $(header).addClass('fixed-on-scroll');
+        if (window.matchMedia('(min-width: 1000px)').matches) {
+          if ($(window).scrollTop() >= 56) {
+            $(innerNav).addClass('fixed-on-scroll');
           } else {
-            $(header).removeClass('fixed-on-scroll');
+            $(innerNav).removeClass('fixed-on-scroll');
           }
         }
       });
