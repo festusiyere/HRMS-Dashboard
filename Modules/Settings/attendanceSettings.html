@@ -542,7 +542,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="myCompanyView.html" class="navlist active">
+                            <a href="myCompanyView.html" class="navlist">
                                 <div class="content">
                                     <div class="title">Company Setting</div>
                                     <div class="details text-muted">
@@ -558,7 +558,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="navlist">
+                            <a href="" class="navlist active">
                                 <div class="content">
                                     <div class="title">Attendance Setting</div>
                                     <div class="details text-muted">
@@ -604,154 +604,142 @@
                     <div class="inner-page">
                         <div class="my-card">
                             <div class="my-card-header">
-                                Company Settings
+                                Attendance Settings
                             </div>
                             <div class="my-card-body">
-                                <div class=" text-right">
-                                    <a href="myCompanyEdit.html" class="button secondary mr-3">
-                                          Edit
+
+                                <div class="mini-card">
+                                    <div class="mini-card-header">
+                                        Attendance Days
+                                    </div>
+                                    <div class="form-group attendance">
+                                        <div class="d-inline-block mr-5">
+                                            Monday
+                                        </div>
+                                        <div class="tg-list-item">
+                                            <input class="tgl tgl-ios" id="cb1" type="checkbox">
+                                            <label class="tgl-btn" for="cb1"></label>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group attendance">
+                                        <div class="d-inline-block mr-5">
+                                            Tuesday
+                                        </div>
+                                        <div class="tg-list-item">
+                                            <input class="tgl tgl-ios" id="cb2" type="checkbox">
+                                            <label class="tgl-btn" for="cb2"></label>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group attendance">
+                                        <div class="d-inline-block mr-5">
+                                            Wednesday
+                                        </div>
+                                        <div class="tg-list-item">
+                                            <input class="tgl tgl-ios" id="cb3" type="checkbox">
+                                            <label class="tgl-btn" for="cb3"></label>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group attendance">
+                                        <div class="d-inline-block mr-5">
+                                            Thursday
+                                        </div>
+                                        <div class="tg-list-item">
+                                            <input class="tgl tgl-ios" id="cb4" type="checkbox">
+                                            <label class="tgl-btn" for="cb4"></label>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group attendance">
+                                        <div class="d-inline-block mr-5">
+                                            Friday
+                                        </div>
+                                        <div class="tg-list-item">
+                                            <input class="tgl tgl-ios" id="cb5" type="checkbox">
+                                            <label class="tgl-btn" for="cb5"></label>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group attendance">
+                                        <div class="d-inline-block mr-5">
+                                            Saturday
+                                        </div>
+                                        <div class="tg-list-item">
+                                            <input class="tgl tgl-ios" id="cb6" type="checkbox">
+                                            <label class="tgl-btn" for="cb6"></label>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group attendance">
+                                        <div class="d-inline-block mr-5">
+                                            Sunday
+                                        </div>
+                                        <div class="tg-list-item">
+                                            <input class="tgl tgl-ios" id="cb7" type="checkbox">
+                                            <label class="tgl-btn" for="cb7"></label>
+                                        </div>
+
+                                    </div>
+                                    <!-- <div class="form-group">
+                                            <input class="inp-cbx" id="noon" type="checkbox">
+                                            <label class="cbx" for="noon"><span>
+                                                <svg width="12px" height="10px">
+                                                <use xlink:href="#check"></use>
+                                                </svg></span><span>Noon</span>
+                                            </label>
+                                        </div> -->
+                                    <!-- <input class="inp-cbx" id="noon2" type="checkbox">
+                                        <label class="cbx" for="noon2"><span>
+                                            <svg width="12px" height="10px">
+                                            <use xlink:href="#check"></use>
+                                            </svg></span><span>Noon</span>
+                                        </label>
+                                        <svg id="check" class="d-non" viewBox="0 0 12 10">
+                                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                        </svg> -->
+
+
+
+                                </div>
+
+
+                                <div class="mini-card">
+                                    <div class="mini-card-header">
+                                        Prorate Salary on Attendance
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio1" name="customRadio"
+                                                class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadio1">Yes</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio2" name="customRadio"
+                                                class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadio2">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class=" form-button">
+                                    <a href="" class="button primary mr-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-check" width="20" height="20"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f6368" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                            <path d="M5 12l5 5l10 -10" />
+                                        </svg>
+                                        Save
                                     </a>
-                                </div>
-
-                                <div class="prof-img">
-                                    <div class="image">
-                                        <img src="../../assets/icons/company.png" alt="">
-                                    </div>
-                                    <div class="name">
-                                        Sam Afemike Company
-                                    </div>
-                                    <div class="id text-muted">
-                                        23941
-                                    </div>
-                                </div>
-
-                                <div class="mini-card">
-                                    <div class="mini-card-header">
-                                        Company Details
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            company name
-                                        </div>
-                                        <div class="value">
-                                            Sam Afemikhe Company
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            rc number
-                                        </div>
-                                        <div class="value">
-                                            23941
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                           address
-                                        </div>
-                                        <div class="value">
-                                            Plot 45, Ishawau Adewale Street. Surulere. Lagos
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            city
-                                        </div>
-                                        <div class="value">
-                                            Surulere
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            country
-                                        </div>
-                                        <div class="value">
-                                            Nigeria
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            language
-                                        </div>
-                                        <div class="value">
-                                            English
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="mini-card">
-                                    <div class="mini-card-header">
-                                        Company Contacts
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            phone numbr
-                                        </div>
-                                        <div class="value">
-                                            +234 816 865 0657 
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            mobile numbr
-                                        </div>
-                                        <div class="value">
-                                            +234 816 865 0657 
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            email
-                                        </div>
-                                        <div class="value">
-                                            festus.iyere@ikooba.com
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                           website
-                                        </div>
-                                        <div class="value">
-                                            www.samafemikhe.com
-                                            <a href="http://samafemikhe.com" target="_blank">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#0d894d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z"/>
-                                                    <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
-                                                    <line x1="10" y1="14" x2="20" y2="4" />
-                                                    <polyline points="15 4 20 4 20 9" />
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            fax
-                                        </div>
-                                        <div class="value">
-                                            ---
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            hot line
-                                        </div>
-                                        <div class="value">
-                                            ---
-                                        </div>
-                                    </div>
+                                    <a href="#" class="button secondary">
+                                        Cancel
+                                    </a>
                                 </div>
 
                             </div>
