@@ -13,6 +13,7 @@
     <!-- Layout styles -->
     <link rel="stylesheet" href="../../assets/css/animations.css">
     <link rel="stylesheet" href="../../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../../assets/css/flatpickr.min.css">
     <link rel="stylesheet" href="../../assets/css/style.css">
     <!-- End layout styles -->
 
@@ -529,7 +530,17 @@
             <!-- Page Contents Begin -->
             <div class="page-content">
                 <div class="page-content-title">
-                    Settings
+                    <button class="page-hamburger" id="page-hamburger">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#2e343b" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z"/>
+                            <circle cx="12" cy="12" r="1" />
+                            <circle cx="12" cy="19" r="1" />
+                            <circle cx="12" cy="5" r="1" />
+                        </svg>
+                    </button>
+                    <div>
+                        Settings
+                    </div>
                 </div>
                 <div class="page-content-inner">
                     <div class="inner-nav">
@@ -566,7 +577,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="navlist">
+                            <a href="leaveCategoryView.html" class="navlist">
                                 <div class="content">
                                     <div class="title">Leave Category</div>
                                     <div class="details text-muted">
@@ -574,7 +585,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="navlist">
+                            <a href="notificationSettings.html" class="navlist">
                                 <div class="content">
                                     <div class="title">Nofication Setting</div>
                                     <div class="details text-muted">
@@ -582,7 +593,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="navlist">
+                            <a href="departmentView.html" class="navlist">
                                 <div class="content">
                                     <div class="title">Department Setting</div>
                                     <div class="details text-muted">
@@ -590,11 +601,19 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="navlist">
+                            <a href="trainingView.html" class="navlist ">
                                 <div class="content">
                                     <div class="title">Training Setting</div>
                                     <div class="details text-muted">
                                         Add and Remove Training
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="accessControlView.html" class="navlist">
+                                <div class="content">
+                                    <div class="title">Access Control</div>
+                                    <div class="details text-muted">
+                                        Change users access
                                     </div>
                                 </div>
                             </a>
@@ -607,6 +626,11 @@
                                 Tax Settings
                             </div>
                             <div class="my-card-body">
+                                <div class="prof-img">
+                                    <div class="image">
+                                        <img src="../../assets/icons/user.png" alt="">
+                                    </div>
+                                </div>
 
                                 <div class="mini-card">
                                     <div class="mini-card-header">
@@ -620,43 +644,27 @@
                                     </div>
 
                                     <div class="tax">
-                                        <div class="">First Taxable</div>
                                         <div class="">
-                                            <input type="text" class="form-control">
+                                            First Taxable
                                         </div>
                                         <div class="">
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-
-                                    <div class="tax">
-                                        <div class="">Next Taxable</div>
-                                        <div class="">
-                                            <input type="text" class="form-control">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="inputEmail3">
+                                            </div>    
                                         </div>
                                         <div class="">
-                                            <input type="text" class="form-control">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="inputEmail3">
+                                            </div>    
                                         </div>
                                     </div>
-
-                                    <div class=" form-button">
-                                        <a href="#" class="button secondary form-aux">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f6368" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z"/>
-                                                <line x1="12" y1="5" x2="12" y2="19" />
-                                                <line x1="5" y1="12" x2="19" y2="12" />
-                                            </svg>
-                                              Add Next
-                                        </a>
-                                    </div>    
-
                                 </div>
 
                                 <div class="mini-card">
                                     <div class="mini-card-header">
-                                        Other Deductions
+                                        Other Deduction
                                     </div>
-                                    <div class="row">
+                                    <div class="row mb-3">
                                         <div class="form-group col-md-6">
                                             <label for="inputPassword3">Pension</label>
                                             <input type="text" class="form-control" id="inputPassword3">
@@ -666,7 +674,7 @@
                                             <input type="text" class="form-control" id="inputPassword3">
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row mb-3">
                                         <div class="form-group col-md-6">
                                             <label for="inputPassword3">Health Insurance</label>
                                             <input type="text" class="form-control" id="inputPassword3">
@@ -676,7 +684,7 @@
                                             <input type="text" class="form-control" id="inputPassword3">
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row mb-3">
                                         <div class="form-group col-md-6">
                                             <label for="inputPassword3">Consolidated Relief Cap (in Figures)</label>
                                             <input type="text" class="form-control" id="inputPassword3">
@@ -700,7 +708,6 @@
                                         Cancel
                                     </a>
                                 </div>    
-
                             </div>
                         </div>
                     </div>
@@ -728,8 +735,14 @@
     <script src="../../assets/js/perfect-scrollbar.js"></script>
     <script src="../../assets/js/feather.js"></script>
 
+    <!-- Datepicker -->
+    <script src="../../assets/js/flatpickr.min.js"></script>
+
     <!-- Custom Script -->
     <script src="../../assets/js/main.js"></script>
+    <script>
+        $('.dates').flatpickr();
+    </script>
 
 </body>
 
