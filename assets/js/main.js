@@ -115,12 +115,15 @@
 
       // Toggling Inner Nav
       if (window.matchMedia("(max-width: 1024px)").matches) {
-        if (!event.target.matches("#page-hamburger svg") ) {
-          const dropdown = document.querySelector(".inner-nav");
-          if (dropdown.classList.contains("mobile")) {
-            dropdown.classList.remove("mobile");
+        if (!$(e.target).closest("#page-hamburger").length) {
+          let nav = $(e.target).closest(".inner-nav").length;
+          console.log(e.target);
+          if (!nav) {
+            if ($(".inner-nav").hasClass("mobile")) {
+              $(".inner-nav").removeClass("mobile");
+            }
           }
-        }
+        }  
       }
     });
 

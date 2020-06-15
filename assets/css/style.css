@@ -462,6 +462,23 @@ body::-webkit-scrollbar-track {
   margin-top: 75px;
 }
 
+@media (min-width: 481px) and (max-width: 767px) {
+    
+.main-wrapper .page-wrapper .page-content {
+  padding: 5px 10px;
+}
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+.main-wrapper .page-wrapper .page-content {
+  padding: 5px 10px;
+}
+
+}
+
+
 .main-wrapper .page-wrapper .page-content-inner {
   display: flex;
   flex-flow: row nowrap;
@@ -597,7 +614,15 @@ body::-webkit-scrollbar-track {
   background: #fff;
   border-radius: 5px;
 }
-
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    .page-content-inner .inner-page {
+      margin-left: 0px;
+    }
+      
+  }
+  
 .inner-page .my-card {
   padding: 10px 15px;
 }
@@ -700,6 +725,32 @@ body::-webkit-scrollbar-track {
 .my-card-body .tax > div {
   width: 33.33%;
   margin: 0 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    
+  .mini-card .details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mini-card .details .label {
+    flex-basis: 100%;
+    width: 100%;
+    font-size: 0.65rem;
+    margin-bottom: 5px;
+  }  
+
+  .my-card-body .tax {
+    flex-flow: column nowrap;
+    align-items: stretch;
+  }
+
+  .my-card-body .tax > div {
+    width: 100%;
+    margin: 0 20px;
+  }  
+    
 }
 
 .attendance {
@@ -1665,8 +1716,11 @@ outline: none !important;
 
 /* Custom table */
 .table-div{
-overflow: auto;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
+
 
 .my-card-body .table-div{
   margin: 20px 0 50px;
@@ -1783,6 +1837,12 @@ table.my-table{
   flex: 0 0 1;
   font-size: 1rem;
   margin-left: 4rem;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .my-card-body .dsnName{
+    margin-left: 0rem;
+  }  
 }
 
 .dsnName.head{
