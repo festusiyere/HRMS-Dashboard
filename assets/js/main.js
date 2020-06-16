@@ -117,7 +117,6 @@
       if (window.matchMedia("(max-width: 1024px)").matches) {
         if (!$(e.target).closest("#page-hamburger").length) {
           let nav = $(e.target).closest(".inner-nav").length;
-          console.log(e.target);
           if (!nav) {
             if ($(".inner-nav").hasClass("mobile")) {
               $(".inner-nav").removeClass("mobile");

@@ -1031,9 +1031,15 @@ body::-webkit-scrollbar-track {
   padding: 7px !important;
 }
 
-/* .navbar .dropdown.nav-profile.show .dropdown-menu .top{
-  margin-bottom: 10px;
-} */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    
+.navbar .dropdown.nav-profile.show .dropdown-menu.show{
+  right: -12px !important;
+}
+  
+}
+
 
 .navbar .dropdown.nav-profile.show .dropdown-menu .top .content {
   display: flex;
@@ -1270,7 +1276,8 @@ body::-webkit-scrollbar-track {
   }
 
   .sidebar-open .page-wrapper {
-    opacity: 0.6;
+    /* opacity: 0.6; */
+    filter: blur(2px);
   }
 
   .navbar .sidebar-toggler.mobile {
