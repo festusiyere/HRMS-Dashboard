@@ -1276,7 +1276,6 @@ body::-webkit-scrollbar-track {
   }
 
   .sidebar-open .page-wrapper {
-    /* opacity: 0.6; */
     filter: blur(2px);
   }
 
