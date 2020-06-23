@@ -1897,3 +1897,12 @@ table.my-table{
 .my-table.training td:nth-child(5){
   text-align: center;
 }
+
+.my-table button:hover svg.icon-tabler-edit{
+  stroke: #379adb;
+}
+
+.my-table button:hover svg.icon-tabler-eye{
+  stroke: #0d894d;
+}
+

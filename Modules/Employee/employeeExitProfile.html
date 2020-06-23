@@ -13,7 +13,6 @@
     <!-- Layout styles -->
     <link rel="stylesheet" href="../../assets/css/animations.css">
     <link rel="stylesheet" href="../../assets/css/bootstrap.css">
-    <link rel="stylesheet" href="../../assets/css/flatpickr.min.css">
     <link rel="stylesheet" href="../../assets/css/style.css">
     <!-- End layout styles -->
 
@@ -84,7 +83,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="" class="nav-link active">
                             <!-- <i class="link-icon" data-feather="users"></i> -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-id" width="25"
                                 height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none"
@@ -219,7 +218,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link active">
+                        <a href="../Settings/myProfileView.html" class="nav-link">
                             <!-- <i class="link-icon" data-feather="settings"></i> -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings"
                                 width="25" height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none"
@@ -539,81 +538,57 @@
                         </svg>
                     </button>
                     <div>
-                        Settings
+                       Employee Exit
                     </div>
                 </div>
                 <div class="page-content-inner">
                     <div class="inner-nav">
                         <nav class="nav">
-                            <a href="myProfileView.html" class="navlist">
+                            <a href="profileManagement.html" class="navlist active">
                                 <div class="content">
-                                    <div class="title">My Profile</div>
+                                    <div class="title">Profile Mangement</div>
                                     <div class="details text-muted">
-                                        Details about your personal information
+                                        Details about an employee
                                     </div>
                                 </div>
                             </a>
-                            <a href="myCompanyView.html" class="navlist">
+                            <a href="employeeLeaveView.html" class="navlist">
                                 <div class="content">
-                                    <div class="title">Company Setting</div>
+                                    <div class="title">Employee Leave History</div>
                                     <div class="details text-muted">
-                                        Details about your company information
+                                        histories of employees
                                     </div>
                                 </div>
                             </a>
-                            <a href="myTaxView.html" class="navlist">
+                            <a href="employeeExitView.html" class="navlist">
                                 <div class="content">
-                                    <div class="title">Tax Setting</div>
+                                    <div class="title">Employee Exit</div>
                                     <div class="details text-muted">
-                                        Details about your tax information
+                                        Details about employee exit
                                     </div>
                                 </div>
                             </a>
-                            <a href="attendanceSettings.html" class="navlist">
+                            <a href="employeeTaxExemptionView.html" class="navlist">
                                 <div class="content">
-                                    <div class="title">Attendance Setting</div>
+                                    <div class="title">Employee Tax exemption</div>
                                     <div class="details text-muted">
-                                        Set your attendance days
+                                        Details about tax exemption
                                     </div>
                                 </div>
                             </a>
-                            <a href="leaveCategoryView.html" class="navlist active">
+                            <a href="awardsView.html" class="navlist">
                                 <div class="content">
-                                    <div class="title">Leave Category</div>
+                                    <div class="title">Commendation/Awards</div>
                                     <div class="details text-muted">
-                                        Add and manage leaves
+                                        Details about employee awards
                                     </div>
                                 </div>
                             </a>
-                            <a href="notificationSettings.html" class="navlist">
+                            <a href="queriesView.html" class="navlist">
                                 <div class="content">
-                                    <div class="title">Nofication Setting</div>
+                                    <div class="title">Queries</div>
                                     <div class="details text-muted">
-                                        Add and manage notifcations
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="departmentView.html" class="navlist">
-                                <div class="content">
-                                    <div class="title">Department Setting</div>
-                                    <div class="details text-muted">
-                                        Add and manage Departments
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="trainingView.html" class="navlist ">
-                                <div class="content">
-                                    <div class="title">Training Setting</div>
-                                    <div class="details text-muted">
-                                        Add and Remove Training
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="accessControlView.html" class="navlist">
-                                <div class="content">
-                                    <div class="title">Access Control</div>
-                                    <div class="details text-muted">
-                                        Change users access
+                                        Details about employee queries
                                     </div>
                                 </div>
                             </a>
@@ -623,40 +598,347 @@
                     <div class="inner-page">
                         <div class="my-card">
                             <div class="my-card-header">
-                                Leave Category
+                                Employee Exit Profile
                             </div>
                             <div class="my-card-body">
+                                <div class="prof-img">
+                                    <div class="image">
+                                        <img src="../../assets/icons/user.png" alt="">
+                                    </div>
+                                    <div class="name">
+                                        Iyere Ifeanyi Festus
+                                    </div>
+                                    <div class="id text-muted">
+                                        #1288321
+                                    </div>
+                                </div>
+
                                 <div class="mini-card">
                                     <div class="mini-card-header">
-                                        Add Leave Category
+                                        Work Details
                                     </div>
-                                    <div class="row">
-                                        <div class="form-group col-md-6">
-                                            <label for="inputEmail3">Category Name</label>
-                                            <input type="text" class="form-control is-invalid" id="inputEmail3">
-                                            <div class="invalid-feedback">
-                                                Please input a valid name
-                                              </div>                
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                            employee id
                                         </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">Number of Days</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
+                                        <div class="value">
+                                            1288321
+                                        </div>
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                            department id
+                                        </div>
+                                        <div class="value">
+                                            2394941
+                                        </div>
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                           unit
+                                        </div>
+                                        <div class="value">
+                                            234
+                                        </div>
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                            grade
+                                        </div>
+                                        <div class="value">
+                                            5
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class=" form-button">
-                                    <a href="" class="button primary mr-3">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f6368" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z"/>
-                                            <path d="M5 12l5 5l10 -10" />
-                                        </svg>
-                                        Save
-                                    </a>
-                                    <a href="#" class="button secondary">
-                                        Cancel
-                                    </a>
-                                </div>    
+                                <div class="mini-card">
+                                    <div class="mini-card-header">
+                                        Personal Details
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                            first name
+                                        </div>
+                                        <div class="value">
+                                            Festus
+                                        </div>
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                            middle name
+                                        </div>
+                                        <div class="value">
+                                            Ifeanyi
+                                        </div>
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                            last name
+                                        </div>
+                                        <div class="value">
+                                            Iyere
+                                        </div>
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                            Email
+                                        </div>
+                                        <div class="value">
+                                            festus.iyere@ikooba.com
+                                        </div>
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                            phone number
+                                        </div>
+                                        <div class="value">
+                                            +23480201919
+                                        </div>
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                            Home Address
+                                        </div>
+                                        <div class="value">
+                                            Plot 32, Ishawu Adewale Street, Lagos, Nigeria
+                                        </div>
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                            date of birth
+                                        </div>
+                                        <div class="value">
+                                            June 12th, 2020
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                            gender
+                                        </div>
+                                        <div class="value">
+                                            Male
+                                        </div>
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                            Maritial Status
+                                        </div>
+                                        <div class="value">
+                                            Single
+                                        </div>
+                                    </div>
+
+                                </div>  
+
+                                <div class="mini-card">
+                                    <div class="mini-card-header">
+                                        Spouse Details - If Married
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                            name
+                                        </div>
+                                        <div class="value">
+                                            ---
+                                        </div>
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                            email
+                                        </div>
+                                        <div class="value">
+                                            ---
+                                        </div>
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                           phone number
+                                        </div>
+                                        <div class="value">
+                                           ---
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="mini-card">
+                                    <div class="mini-card-header">
+                                        Children
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                            name
+                                        </div>
+                                        <div class="value">
+                                            ---
+                                        </div>
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                            date of birth
+                                        </div>
+                                        <div class="value">
+                                            ---
+                                        </div>
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                           gender
+                                        </div>
+                                        <div class="value">
+                                           ---
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="mini-card">
+                                    <div class="mini-card-header">
+                                        Next of Kin
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                            name
+                                        </div>
+                                        <div class="value">
+                                            Iyere Festus Ifeanyi
+                                        </div>
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                            relationship
+                                        </div>
+                                        <div class="value">
+                                            wife
+                                        </div>
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                            phone number
+                                        </div>
+                                        <div class="value">
+                                            +2348168650657
+                                        </div>
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                           address
+                                        </div>
+                                        <div class="value">
+                                           plot 47 Ishawu Adewale street, Surulere
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="mini-card">
+                                    <div class="mini-card-header">
+                                        Emergency Contact
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                            name
+                                        </div>
+                                        <div class="value">
+                                            ---
+                                        </div>
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                            phone number
+                                        </div>
+                                        <div class="value">
+                                            ---
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="mini-card">
+                                    <div class="mini-card-header">
+                                        Other Details
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                            Email access
+                                        </div>
+                                        <div class="value">
+                                            Enabled
+                                        </div>
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                            Access Control Disable
+                                        </div>
+                                        <div class="value">
+                                            No
+                                        </div>
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                            Exit Interview
+                                        </div>
+                                        <div class="value">
+                                            Yes
+                                        </div>
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                            Asset Retrival
+                                        </div>
+                                        <div class="value">
+                                            Laptop, Furniture, Phone. Stationery
+                                        </div>
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                            Close Employee File
+                                        </div>
+                                        <div class="value">
+                                            Yes
+                                        </div>
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="label text-muted">
+                                            Reason for Closure
+                                        </div>
+                                        <div class="value">
+                                            Resignation
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -684,14 +966,8 @@
     <script src="../../assets/js/perfect-scrollbar.js"></script>
     <script src="../../assets/js/feather.js"></script>
 
-    <!-- Datepicker -->
-    <script src="../../assets/js/flatpickr.min.js"></script>
-
     <!-- Custom Script -->
     <script src="../../assets/js/main.js"></script>
-    <script>
-        $('.dates').flatpickr();
-    </script>
 
 </body>
 
