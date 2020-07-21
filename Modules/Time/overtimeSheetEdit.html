@@ -83,7 +83,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link active">
+                        <a href="" class="nav-link">
                             <!-- <i class="link-icon" data-feather="users"></i> -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-id" width="25"
                                 height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none"
@@ -126,7 +126,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="" class="nav-link active">
                             <!-- <i class="link-icon" data-feather="clock"></i> -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock"
                                 width="25" height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none"
@@ -530,65 +530,43 @@
             <div class="page-content">
                 <div class="page-content-title">
                     <button class="page-hamburger" id="page-hamburger">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#2e343b" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#2e343b" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" />
                             <circle cx="12" cy="12" r="1" />
                             <circle cx="12" cy="19" r="1" />
                             <circle cx="12" cy="5" r="1" />
                         </svg>
                     </button>
                     <div>
-                       Employee Management
+                        Time and Attendance
                     </div>
                 </div>
                 <div class="page-content-inner">
                     <div class="inner-nav">
                         <nav class="nav">
+                            <a href="profileManagement.html" class="navlist ">
+                                <div class="content">
+                                    <div class="title">Time Sheet</div>
+                                    <div class="details text-muted">
+                                        Clock in and Clock out
+                                    </div>
+                                </div>
+                            </a>
                             <a href="profileManagement.html" class="navlist active">
                                 <div class="content">
-                                    <div class="title">Profile Mangement</div>
+                                    <div class="title">Over Time - Time Sheet</div>
                                     <div class="details text-muted">
-                                        Details about an employee
+                                        Details about an employee grades
                                     </div>
                                 </div>
                             </a>
-                            <a href="employeeLeaveView.html" class="navlist">
+                            <a href="profileManagement.html" class="navlist">
                                 <div class="content">
-                                    <div class="title">Employee Leave History</div>
+                                    <div class="title">Attendance List</div>
                                     <div class="details text-muted">
-                                        histories of employees
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="employeeExitView.html" class="navlist">
-                                <div class="content">
-                                    <div class="title">Employee Exit</div>
-                                    <div class="details text-muted">
-                                        Details about employee exit
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="employeeTaxExemptionView.html" class="navlist">
-                                <div class="content">
-                                    <div class="title">Employee Tax exemption</div>
-                                    <div class="details text-muted">
-                                        Details about tax exemption
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="awardsView.html" class="navlist">
-                                <div class="content">
-                                    <div class="title">Commendation/Awards</div>
-                                    <div class="details text-muted">
-                                        Details about employee awards
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="queriesView.html" class="navlist">
-                                <div class="content">
-                                    <div class="title">Queries</div>
-                                    <div class="details text-muted">
-                                        Details about employee queries
+                                        Details about an employee grades
                                     </div>
                                 </div>
                             </a>
@@ -598,353 +576,62 @@
                     <div class="inner-page">
                         <div class="my-card">
                             <div class="my-card-header">
-                                Profile Management
+                                Over Time - Time Sheet
                             </div>
                             <div class="my-card-body">
-                                <div class=" text-right">
-                                    <a href="myProfileEdit.html" class="button secondary mr-3">
-                                          Edit
-                                    </a>
-                                </div>
-
-                                <div class="prof-img">
-                                    <div class="image">
-                                        <img src="../../assets/icons/user.png" alt="">
-                                    </div>
-                                    <div class="name">
-                                        Iyere Ifeanyi Festus
-                                    </div>
-                                    <div class="id text-muted">
-                                        #1288321
-                                    </div>
-                                </div>
 
                                 <div class="mini-card">
                                     <div class="mini-card-header">
-                                        Work Details
+                                        Over Time Information
                                     </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            employee id
+                                    <div class="row">
+                                        <div class="form-group col-md-6 ">
+                                            <label for="inputState">Over-Time Starts</label>
+                                            <input type="text" class="form-control" id="inputPassword3">
                                         </div>
-                                        <div class="value">
-                                            1288321
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            department id
-                                        </div>
-                                        <div class="value">
-                                            2394941
+                                        <div class="form-group col-md-6 ">
+                                            <label for="inputState">Over-Time Ends</label>
+                                            <input type="text" class="form-control" id="inputPassword3">
                                         </div>
                                     </div>
 
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                           unit
+                                    <div class="row">
+                                        <div class="form-group col-md-6 ">
+                                            <label for="inputState">Date</label>
+                                            <input type="text" class="form-control" id="inputPassword3">
                                         </div>
-                                        <div class="value">
-                                            234
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            grade
-                                        </div>
-                                        <div class="value">
-                                            5
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="mini-card">
-                                    <div class="mini-card-header">
-                                        Personal Details
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            first name
-                                        </div>
-                                        <div class="value">
-                                            Festus
+                                        <div class="form-group col-md-6">
+                                            <label for="inputState">Location</label>
+                                            <select id="inputState" class="form-control is-invalid">
+                                                <option selected>Choose...</option>
+                                                <option>Office</option>
+                                                <option>Remote</option>
+                                                <option>Factory</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Please select an option
+                                            </div>
                                         </div>
                                     </div>
 
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            middle name
-                                        </div>
-                                        <div class="value">
-                                            Ifeanyi
-                                        </div>
+                                    <div class="form-group">
+                                        <label for="inputState">Reason for Over-Time</label>
+                                        <textarea name="" class="form-control" id=""></textarea>
                                     </div>
 
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            last name
-                                        </div>
-                                        <div class="value">
-                                            Iyere
-                                        </div>
+                                    <div class=" form-button">
+                                        <a href="" class="button primary mr-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f6368" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z"/>
+                                                <path d="M5 12l5 5l10 -10" />
+                                            </svg>
+                                            Save
+                                        </a>
+                                        <a href="#" class="button secondary">
+                                            Cancel
+                                        </a>
+                                    </div>    
                                     </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            Email
-                                        </div>
-                                        <div class="value">
-                                            festus.iyere@ikooba.com
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            phone number
-                                        </div>
-                                        <div class="value">
-                                            +23480201919
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            Home Address
-                                        </div>
-                                        <div class="value">
-                                            Plot 32, Ishawu Adewale Street, Lagos, Nigeria
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            date of birth
-                                        </div>
-                                        <div class="value">
-                                            June 12th, 2020
-                                        </div>
-                                    </div>
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            gender
-                                        </div>
-                                        <div class="value">
-                                            Male
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            Maritial Status
-                                        </div>
-                                        <div class="value">
-                                            Single
-                                        </div>
-                                    </div>
-
-                                </div>  
-
-                                <div class="mini-card">
-                                    <div class="mini-card-header">
-                                        Spouse Details - If Married
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            name
-                                        </div>
-                                        <div class="value">
-                                            ---
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            email
-                                        </div>
-                                        <div class="value">
-                                            ---
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                           phone number
-                                        </div>
-                                        <div class="value">
-                                           ---
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="mini-card">
-                                    <div class="mini-card-header">
-                                        Children
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            name
-                                        </div>
-                                        <div class="value">
-                                            ---
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            date of birth
-                                        </div>
-                                        <div class="value">
-                                            ---
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                           gender
-                                        </div>
-                                        <div class="value">
-                                           ---
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="mini-card">
-                                    <div class="mini-card-header">
-                                        Next of Kin
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            name
-                                        </div>
-                                        <div class="value">
-                                            Iyere Festus Ifeanyi
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            relationship
-                                        </div>
-                                        <div class="value">
-                                            wife
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            phone number
-                                        </div>
-                                        <div class="value">
-                                            +2348168650657
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                           address
-                                        </div>
-                                        <div class="value">
-                                           plot 47 Ishawu Adewale street, Surulere
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="mini-card">
-                                    <div class="mini-card-header">
-                                        Emergency Contact
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            name
-                                        </div>
-                                        <div class="value">
-                                            ---
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            phone number
-                                        </div>
-                                        <div class="value">
-                                            ---
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="mini-card">
-                                    <div class="mini-card-header">
-                                        Other Details
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            Email access
-                                        </div>
-                                        <div class="value">
-                                            Enabled
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            Access Control Disable
-                                        </div>
-                                        <div class="value">
-                                            No
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            Exit Interview
-                                        </div>
-                                        <div class="value">
-                                            Yes
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            Asset Retrival
-                                        </div>
-                                        <div class="value">
-                                            Laptop, Furniture, Phone. Stationery
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            Close Employee File
-                                        </div>
-                                        <div class="value">
-                                            Yes
-                                        </div>
-                                    </div>
-
-                                    <div class="details">
-                                        <div class="label text-muted">
-                                            Reason for Closure
-                                        </div>
-                                        <div class="value">
-                                            Resignation
-                                        </div>
-                                    </div>
-
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -954,6 +641,25 @@
             </div>
             <!-- Page Contents Ends -->
 
+            <!-- Custom Modal -->
+            <div class="modal fade" id="deleteConfirmationModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <img src="../../assets/images/deleteModal.svg" class="image" alt="">
+                            <p>Are you sure you want to delete this Leave Category? </p>
+                            <div class="modal-buttons">
+                                <button type="button" class="button secondary" data-dismiss="modal">No, Cancel</button>
+                                <button type="button" class="button primary">Yes, Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- Footer Begins -->
             <footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-center">
