@@ -188,7 +188,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="" class="nav-link active">
                             <!-- <i class="link-icon" data-feather="book-open"></i> -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card"
                                 width="25" height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none"
@@ -218,7 +218,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link active">
+                        <a href="../Settings/myProfileView.html" class="nav-link">
                             <!-- <i class="link-icon" data-feather="settings"></i> -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings"
                                 width="25" height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none"
@@ -381,7 +381,7 @@
                             <div class="dropdown-menu" aria-labelledby="notificationDropdown">
                                 <div class="dropdown-header">
                                     <div class="head">
-                                        notifications
+                                        Nofications
                                     </div>
                                 </div>
                                 <div class="dropdown-body">
@@ -538,88 +538,49 @@
                         </svg>
                     </button>
                     <div>
-                        Settings
+                        Payroll Management
                     </div>
                 </div>
                 <div class="page-content-inner">
                     <div class="inner-nav">
                         <nav class="nav">
-                            <a href="myProfileView.html" class="navlist">
+                            <a href="profileManagement.html" class="navlist">
                                 <div class="content">
-                                    <div class="title">My Profile</div>
+                                    <div class="title">Deduction Processing</div>
                                     <div class="details text-muted">
-                                        Details about your personal information
+                                        Details about an employee grades
                                     </div>
                                 </div>
                             </a>
-                            <a href="myCompanyView.html" class="navlist active">
+                            <a href="profileManagement.html" class="navlist ">
                                 <div class="content">
-                                    <div class="title">Company Setting</div>
+                                    <div class="title">Manage Salary</div>
                                     <div class="details text-muted">
-                                        Details about your company information
+                                        Details about an employee grades
                                     </div>
                                 </div>
                             </a>
-                            <a href="myTaxView.html" class="navlist">
+                            <a href="profileManagement.html" class="navlist active">
                                 <div class="content">
-                                    <div class="title">Tax Setting</div>
+                                    <div class="title">Staff Salary Payment</div>
                                     <div class="details text-muted">
-                                        Details about your tax information
+                                        Details about an employee grades
                                     </div>
                                 </div>
                             </a>
-                            <a href="attendanceSettings.html" class="navlist">
+                            <a href="profileManagement.html" class="navlist">
                                 <div class="content">
-                                    <div class="title">Attendance Setting</div>
+                                    <div class="title">Approved Salary</div>
                                     <div class="details text-muted">
-                                        Set your attendance days
+                                        Details about an employee grades
                                     </div>
                                 </div>
                             </a>
-                            <a href="leaveCategoryView.html" class="navlist">
+                            <a href="profileManagement.html" class="navlist">
                                 <div class="content">
-                                    <div class="title">Leave Category</div>
+                                    <div class="title">PaySlip</div>
                                     <div class="details text-muted">
-                                        Add and manage leaves
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="notificationSettings.html" class="navlist">
-                                <div class="content">
-                                    <div class="title">Notification Setting</div>
-                                    <div class="details text-muted">
-                                        Add and manage notifcations
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="departmentView.html" class="navlist">
-                                <div class="content">
-                                    <div class="title">Department Setting</div>
-                                    <div class="details text-muted">
-                                        Add and manage Departments
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="trainingView.html" class="navlist ">
-                                <div class="content">
-                                    <div class="title">Training Setting</div>
-                                    <div class="details text-muted">
-                                        Add and Remove Training
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="gradeView.html" class="navlist ">
-                                <div class="content">
-                                    <div class="title">Grade Setting</div>
-                                    <div class="details text-muted">
-                                        Add and Remove Grade
-                                    </div>
-                                </div>
-                            </a>                            <a href="accessControlView.html" class="navlist">
-                                <div class="content">
-                                    <div class="title">Access Control</div>
-                                    <div class="details text-muted">
-                                        Change users access
+                                        Details about an employee grades
                                     </div>
                                 </div>
                             </a>
@@ -629,107 +590,425 @@
                     <div class="inner-page">
                         <div class="my-card">
                             <div class="my-card-header">
-                                Company Setting
+                                Approved Salary List
                             </div>
                             <div class="my-card-body">
-                                <div class="prof-img">
-                                    <div class="image">
-                                        <img src="../../assets/icons/company.png" alt="">
-                                    </div>
+                                <div class="table-div">
+                                    <table class="my-table employee-exit">
+                                        <thead>
+                                            <tr>
+                                                <th>Date</th>
+                                                <th>Employee</th>
+                                                <th>Month</th>
+                                                <th>Status</th>
+                                                <th>Make Payment</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>12 Oct 2020</td>
+                                                <td>Juhla Festus</td>
+                                                <td>October</td>
+                                                <td>Approved</td>
+                                                <td>
+                                                    <a href="" class="button primary mr-3">
+                                                        Pay
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <button onclick="window.location.href='employeeExitProfile.html'">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f6368" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z"/>
+                                                            <circle cx="12" cy="12" r="2" />
+                                                            <path d="M2 12l1.5 2a11 11 0 0 0 17 0l1.5 -2" />
+                                                            <path d="M2 12l1.5 -2a11 11 0 0 1 17 0l1.5 2" />
+                                                          </svg>
+                                                    </button>
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                            class="icon icon-tabler icon-tabler-edit" width="20"
+                                                            height="20" viewBox="0 0 24 24" stroke-width="1.5"
+                                                            stroke="#5f6368" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <path
+                                                                d="M9 7 h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
+                                                            <path
+                                                                d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
+                                                            <line x1="16" y1="5" x2="19" y2="8" />
+                                                        </svg>
+                                                    </button>
+                                                    <button data-toggle="modal" data-target="#deleteConfirmationModal">
+                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                            class="icon icon-tabler icon-tabler-trash" width="20"
+                                                            height="20" viewBox="0 0 24 24" stroke-width="1.5"
+                                                            stroke="#5f6368" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <line x1="4" y1="7" x2="20" y2="7" />
+                                                            <line x1="10" y1="11" x2="10" y2="17" />
+                                                            <line x1="14" y1="11" x2="14" y2="17" />
+                                                            <path
+                                                                d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                                            <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>12 Oct 2020</td>
+                                                <td>Juhla Festus</td>
+                                                <td>October</td>
+                                                <td>Approved</td>
+                                                <td>
+                                                    <a href="" class="button primary mr-3">
+                                                        Pay
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <button onclick="window.location.href='employeeExitProfile.html'">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f6368" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z"/>
+                                                            <circle cx="12" cy="12" r="2" />
+                                                            <path d="M2 12l1.5 2a11 11 0 0 0 17 0l1.5 -2" />
+                                                            <path d="M2 12l1.5 -2a11 11 0 0 1 17 0l1.5 2" />
+                                                          </svg>
+                                                    </button>
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                            class="icon icon-tabler icon-tabler-edit" width="20"
+                                                            height="20" viewBox="0 0 24 24" stroke-width="1.5"
+                                                            stroke="#5f6368" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <path
+                                                                d="M9 7 h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
+                                                            <path
+                                                                d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
+                                                            <line x1="16" y1="5" x2="19" y2="8" />
+                                                        </svg>
+                                                    </button>
+                                                    <button data-toggle="modal" data-target="#deleteConfirmationModal">
+                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                            class="icon icon-tabler icon-tabler-trash" width="20"
+                                                            height="20" viewBox="0 0 24 24" stroke-width="1.5"
+                                                            stroke="#5f6368" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <line x1="4" y1="7" x2="20" y2="7" />
+                                                            <line x1="10" y1="11" x2="10" y2="17" />
+                                                            <line x1="14" y1="11" x2="14" y2="17" />
+                                                            <path
+                                                                d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                                            <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>12 Oct 2020</td>
+                                                <td>Juhla Festus</td>
+                                                <td>October</td>
+                                                <td>Approved</td>
+                                                <td>
+                                                    <a href="" class="button primary mr-3">
+                                                        Pay
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <button onclick="window.location.href='employeeExitProfile.html'">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f6368" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z"/>
+                                                            <circle cx="12" cy="12" r="2" />
+                                                            <path d="M2 12l1.5 2a11 11 0 0 0 17 0l1.5 -2" />
+                                                            <path d="M2 12l1.5 -2a11 11 0 0 1 17 0l1.5 2" />
+                                                          </svg>
+                                                    </button>
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                            class="icon icon-tabler icon-tabler-edit" width="20"
+                                                            height="20" viewBox="0 0 24 24" stroke-width="1.5"
+                                                            stroke="#5f6368" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <path
+                                                                d="M9 7 h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
+                                                            <path
+                                                                d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
+                                                            <line x1="16" y1="5" x2="19" y2="8" />
+                                                        </svg>
+                                                    </button>
+                                                    <button data-toggle="modal" data-target="#deleteConfirmationModal">
+                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                            class="icon icon-tabler icon-tabler-trash" width="20"
+                                                            height="20" viewBox="0 0 24 24" stroke-width="1.5"
+                                                            stroke="#5f6368" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <line x1="4" y1="7" x2="20" y2="7" />
+                                                            <line x1="10" y1="11" x2="10" y2="17" />
+                                                            <line x1="14" y1="11" x2="14" y2="17" />
+                                                            <path
+                                                                d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                                            <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>12 Oct 2020</td>
+                                                <td>Juhla Festus</td>
+                                                <td>October</td>
+                                                <td>Approved</td>
+                                                <td>
+                                                    <a href="" class="button primary mr-3">
+                                                        Pay
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <button onclick="window.location.href='employeeExitProfile.html'">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f6368" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z"/>
+                                                            <circle cx="12" cy="12" r="2" />
+                                                            <path d="M2 12l1.5 2a11 11 0 0 0 17 0l1.5 -2" />
+                                                            <path d="M2 12l1.5 -2a11 11 0 0 1 17 0l1.5 2" />
+                                                          </svg>
+                                                    </button>
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                            class="icon icon-tabler icon-tabler-edit" width="20"
+                                                            height="20" viewBox="0 0 24 24" stroke-width="1.5"
+                                                            stroke="#5f6368" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <path
+                                                                d="M9 7 h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
+                                                            <path
+                                                                d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
+                                                            <line x1="16" y1="5" x2="19" y2="8" />
+                                                        </svg>
+                                                    </button>
+                                                    <button data-toggle="modal" data-target="#deleteConfirmationModal">
+                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                            class="icon icon-tabler icon-tabler-trash" width="20"
+                                                            height="20" viewBox="0 0 24 24" stroke-width="1.5"
+                                                            stroke="#5f6368" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <line x1="4" y1="7" x2="20" y2="7" />
+                                                            <line x1="10" y1="11" x2="10" y2="17" />
+                                                            <line x1="14" y1="11" x2="14" y2="17" />
+                                                            <path
+                                                                d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                                            <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>12 Oct 2020</td>
+                                                <td>Juhla Festus</td>
+                                                <td>October</td>
+                                                <td>Approved</td>
+                                                <td>
+                                                    <a href="" class="button primary mr-3">
+                                                        Pay
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <button onclick="window.location.href='employeeExitProfile.html'">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f6368" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z"/>
+                                                            <circle cx="12" cy="12" r="2" />
+                                                            <path d="M2 12l1.5 2a11 11 0 0 0 17 0l1.5 -2" />
+                                                            <path d="M2 12l1.5 -2a11 11 0 0 1 17 0l1.5 2" />
+                                                          </svg>
+                                                    </button>
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                            class="icon icon-tabler icon-tabler-edit" width="20"
+                                                            height="20" viewBox="0 0 24 24" stroke-width="1.5"
+                                                            stroke="#5f6368" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <path
+                                                                d="M9 7 h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
+                                                            <path
+                                                                d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
+                                                            <line x1="16" y1="5" x2="19" y2="8" />
+                                                        </svg>
+                                                    </button>
+                                                    <button data-toggle="modal" data-target="#deleteConfirmationModal">
+                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                            class="icon icon-tabler icon-tabler-trash" width="20"
+                                                            height="20" viewBox="0 0 24 24" stroke-width="1.5"
+                                                            stroke="#5f6368" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <line x1="4" y1="7" x2="20" y2="7" />
+                                                            <line x1="10" y1="11" x2="10" y2="17" />
+                                                            <line x1="14" y1="11" x2="14" y2="17" />
+                                                            <path
+                                                                d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                                            <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>12 Oct 2020</td>
+                                                <td>Juhla Festus</td>
+                                                <td>October</td>
+                                                <td>Approved</td>
+                                                <td>
+                                                    <a href="" class="button primary mr-3">
+                                                        Pay
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <button onclick="window.location.href='employeeExitProfile.html'">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f6368" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z"/>
+                                                            <circle cx="12" cy="12" r="2" />
+                                                            <path d="M2 12l1.5 2a11 11 0 0 0 17 0l1.5 -2" />
+                                                            <path d="M2 12l1.5 -2a11 11 0 0 1 17 0l1.5 2" />
+                                                          </svg>
+                                                    </button>
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                            class="icon icon-tabler icon-tabler-edit" width="20"
+                                                            height="20" viewBox="0 0 24 24" stroke-width="1.5"
+                                                            stroke="#5f6368" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <path
+                                                                d="M9 7 h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
+                                                            <path
+                                                                d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
+                                                            <line x1="16" y1="5" x2="19" y2="8" />
+                                                        </svg>
+                                                    </button>
+                                                    <button data-toggle="modal" data-target="#deleteConfirmationModal">
+                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                            class="icon icon-tabler icon-tabler-trash" width="20"
+                                                            height="20" viewBox="0 0 24 24" stroke-width="1.5"
+                                                            stroke="#5f6368" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <line x1="4" y1="7" x2="20" y2="7" />
+                                                            <line x1="10" y1="11" x2="10" y2="17" />
+                                                            <line x1="14" y1="11" x2="14" y2="17" />
+                                                            <path
+                                                                d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                                            <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>12 Oct 2020</td>
+                                                <td>Juhla Festus</td>
+                                                <td>October</td>
+                                                <td>Approved</td>
+                                                <td>
+                                                    <a href="" class="button primary mr-3">
+                                                        Pay
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <button onclick="window.location.href='employeeExitProfile.html'">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f6368" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z"/>
+                                                            <circle cx="12" cy="12" r="2" />
+                                                            <path d="M2 12l1.5 2a11 11 0 0 0 17 0l1.5 -2" />
+                                                            <path d="M2 12l1.5 -2a11 11 0 0 1 17 0l1.5 2" />
+                                                          </svg>
+                                                    </button>
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                            class="icon icon-tabler icon-tabler-edit" width="20"
+                                                            height="20" viewBox="0 0 24 24" stroke-width="1.5"
+                                                            stroke="#5f6368" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <path
+                                                                d="M9 7 h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
+                                                            <path
+                                                                d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
+                                                            <line x1="16" y1="5" x2="19" y2="8" />
+                                                        </svg>
+                                                    </button>
+                                                    <button data-toggle="modal" data-target="#deleteConfirmationModal">
+                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                            class="icon icon-tabler icon-tabler-trash" width="20"
+                                                            height="20" viewBox="0 0 24 24" stroke-width="1.5"
+                                                            stroke="#5f6368" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <line x1="4" y1="7" x2="20" y2="7" />
+                                                            <line x1="10" y1="11" x2="10" y2="17" />
+                                                            <line x1="14" y1="11" x2="14" y2="17" />
+                                                            <path
+                                                                d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                                            <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>12 Oct 2020</td>
+                                                <td>Juhla Festus</td>
+                                                <td>October</td>
+                                                <td>Approved</td>
+                                                <td>
+                                                    <a href="" class="button primary mr-3">
+                                                        Pay
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <button onclick="window.location.href='employeeExitProfile.html'">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f6368" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z"/>
+                                                            <circle cx="12" cy="12" r="2" />
+                                                            <path d="M2 12l1.5 2a11 11 0 0 0 17 0l1.5 -2" />
+                                                            <path d="M2 12l1.5 -2a11 11 0 0 1 17 0l1.5 2" />
+                                                          </svg>
+                                                    </button>
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                            class="icon icon-tabler icon-tabler-edit" width="20"
+                                                            height="20" viewBox="0 0 24 24" stroke-width="1.5"
+                                                            stroke="#5f6368" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <path
+                                                                d="M9 7 h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
+                                                            <path
+                                                                d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
+                                                            <line x1="16" y1="5" x2="19" y2="8" />
+                                                        </svg>
+                                                    </button>
+                                                    <button data-toggle="modal" data-target="#deleteConfirmationModal">
+                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                            class="icon icon-tabler icon-tabler-trash" width="20"
+                                                            height="20" viewBox="0 0 24 24" stroke-width="1.5"
+                                                            stroke="#5f6368" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <line x1="4" y1="7" x2="20" y2="7" />
+                                                            <line x1="10" y1="11" x2="10" y2="17" />
+                                                            <line x1="14" y1="11" x2="14" y2="17" />
+                                                            <path
+                                                                d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                                            <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-
-                                <div class="mini-card">
-                                    <div class="mini-card-header">
-                                        Company Details
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="inputPassword3">Name</label>
-                                        <input type="text" class="form-control is-invalid" id="inputPassword3">
-                                        <div class="invalid-feedback">
-                                            Please input a valid name
-                                          </div>                
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">RC Number</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
-                                        </div>
-                                        <div class="form-group col-md-6 ">
-                                            <label for="inputState">Active Languae</label>
-                                            <select id="inputState" class="form-control is-invalid">
-                                                <option selected>Choose...</option>
-                                                <option>English</option>
-                                                <option>French</option>
-                                            </select>
-                                            <div class="invalid-feedback">
-                                                Please select an option
-                                              </div>                
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="inputPassword3">Address</label>
-                                        <input type="text" class="form-control" id="inputPassword3">
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">City</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">Country</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="mini-card">
-                                    <div class="mini-card-header">
-                                        Company Contact
-                                    </div>
-                                    <div class="row mb-3">
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">Phone Number</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">Mobile Number</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">Email</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">Website</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">Fax</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">Hot Line</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class=" form-button">
-                                    <a href="" class="button primary mr-3">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f6368" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z"/>
-                                            <path d="M5 12l5 5l10 -10" />
-                                        </svg>
-                                        Save
-                                    </a>
-                                    <a href="#" class="button secondary">
-                                        Cancel
-                                    </a>
-                                </div>    
                             </div>
                         </div>
                     </div>
@@ -739,6 +1018,24 @@
             </div>
             <!-- Page Contents Ends -->
 
+                        <!-- Custom Modal -->
+                        <div class="modal fade" id="deleteConfirmationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                <div class="modal-body">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <img src="../../assets/images/deleteModal.svg" class="image" alt="">
+                                    <p>Are you sure you want to delete this Leave Category? </p>
+                                  <div class="modal-buttons">
+                                      <button type="button" class="button secondary" data-dismiss="modal">No, Cancel</button>
+                                      <button type="button" class="button primary">Yes, Delete</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
 
             <!-- Footer Begins -->
             <footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-center">

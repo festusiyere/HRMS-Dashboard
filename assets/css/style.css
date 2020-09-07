@@ -1922,6 +1922,10 @@ table.my-table{
   stroke: #0d894d;
 }
 
-.payslip{
-  
+.staff_ss{
+  align-items: flex-start !important;
+}
+
+.staff_ss .value {
+  font-size: 0.9rem !important;
 }

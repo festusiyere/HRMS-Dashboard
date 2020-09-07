@@ -546,14 +546,6 @@
                         <nav class="nav">
                             <a href="profileManagement.html" class="navlist">
                                 <div class="content">
-                                    <div class="title">Grade/Category</div>
-                                    <div class="details text-muted">
-                                        Details about an employee grades
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="profileManagement.html" class="navlist">
-                                <div class="content">
                                     <div class="title">Deduction Processing</div>
                                     <div class="details text-muted">
                                         Details about an employee grades
@@ -612,6 +604,19 @@
                                           </svg>
                                           Import Excel
                                     </a>
+
+                                    <a href="myCompanyEdit.html" class="button secondary mr-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-share" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f6368" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z"/>
+                                            <circle cx="6" cy="12" r="3" />
+                                            <circle cx="18" cy="6" r="3" />
+                                            <circle cx="18" cy="18" r="3" />
+                                            <line x1="8.7" y1="10.7" x2="15.3" y2="7.3" />
+                                            <line x1="8.7" y1="13.3" x2="15.3" y2="16.7" />
+                                          </svg>
+                                          Export Excel
+                                    </a>
+
                                 </div>
 
                                 <div class="mini-card">
@@ -625,7 +630,7 @@
                                         </div>
                                         <div class="form-group col-md-6 ">
                                             <label for="inputState">Month</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
+                                            <input type="date" class="form-control" id="inputPassword3">
                                         </div>
                                     </div>
                                     <div class="row">
@@ -638,61 +643,67 @@
                                             <input type="text" class="form-control" id="inputPassword3">
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">Basic Salary</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
+                                    <br>
+                                    <div class="details staff_ss">
+                                        <div class="label text-muted">
+                                            Basic Salary
                                         </div>
-                                        <div class="form-group col-md-6 ">
-                                            <label for="inputState">Category type</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">Deduction Total</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
-                                        </div>
-                                        <div class="form-group col-md-6 ">
-                                            <label for="inputState">Additional Payment Total</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
+                                        <div class="value">
+                                            N120,000
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">Taxes</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
+                                    <div class="details staff_ss">
+                                        <div class="label text-muted">
+                                            Category Type
                                         </div>
-                                        <div class="form-group col-md-6 ">
-                                            <label for="inputState">Tax Exemption</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
-                                        </div>
-                                    </div>
-    
-                                    <div class="row">
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">Enter Additional Payment</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
-                                        </div>
-                                        <div class="form-group col-md-6 ">
-                                            <label for="inputState">Additional Payment Amount</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
+                                        <div class="value">
+                                            Transportation Allowance N600
+                                            <br>
+                                            Feeding Allowance N600
                                         </div>
                                     </div>
-
-                                    <div class="form-group">
-                                        <div class=" text-left">
-                                            <a href="myCompanyEdit.html" class="button secondary mr-3">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-share" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f6368" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z"/>
-                                                    <circle cx="6" cy="12" r="3" />
-                                                    <circle cx="18" cy="6" r="3" />
-                                                    <circle cx="18" cy="18" r="3" />
-                                                    <line x1="8.7" y1="10.7" x2="15.3" y2="7.3" />
-                                                    <line x1="8.7" y1="13.3" x2="15.3" y2="16.7" />
-                                                  </svg>
-                                                  Export Excel
-                                            </a>
+                                    <div class="details staff_ss">
+                                        <div class="label text-muted">
+                                            Deduction Total
+                                        </div>
+                                        <div class="value">
+                                            Personal Loan N5000
+                                            <br>
+                                            Penalty N5000
+                                            <br>
+                                            Pension 0
+                                            <br>
+                                            Health Insurance 30000
+                                        </div>
+                                    </div>
+                                    <div class="details staff_ss">
+                                        <div class="label text-muted">
+                                            Additional Payment Total
+                                        </div>
+                                        <div class="value">
+                                            Maternity 10000
+                                            <br>
+                                            Sales Profit 20,000
+                                            <br>
+                                            Bonus Package 30, 000
+                                        </div>
+                                    </div>
+                                    <div class="details staff_ss">
+                                        <div class="label text-muted">
+                                            Taxes
+                                        </div>
+                                        <div class="value">
+                                            N9,000
+                                        </div>
+                                    </div>
+                                    <div class="details staff_ss">
+                                        <div class="label text-muted">
+                                            Taxes Exemption
+                                        </div>
+                                        <div class="value">
+                                            NHIS 0
+                                            <br>
+                                            Pension 0
                                         </div>
                                     </div>
                                 </div>

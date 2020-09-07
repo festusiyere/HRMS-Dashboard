@@ -530,8 +530,10 @@
             <div class="page-content">
                 <div class="page-content-title">
                     <button class="page-hamburger" id="page-hamburger">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#2e343b" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#2e343b" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" />
                             <circle cx="12" cy="12" r="1" />
                             <circle cx="12" cy="19" r="1" />
                             <circle cx="12" cy="5" r="1" />
@@ -544,14 +546,6 @@
                 <div class="page-content-inner">
                     <div class="inner-nav">
                         <nav class="nav">
-                            <a href="profileManagement.html" class="navlist">
-                                <div class="content">
-                                    <div class="title">Grade/Category</div>
-                                    <div class="details text-muted">
-                                        Details about an employee grades
-                                    </div>
-                                </div>
-                            </a>
                             <a href="profileManagement.html" class="navlist">
                                 <div class="content">
                                     <div class="title">Deduction Processing</div>
@@ -604,39 +598,26 @@
 
                                 <div class="mini-card">
                                     <div class="mini-card-header">
-                                        Pay Employee Salary  
+                                        Prepare Payment Exception
                                     </div>
                                     <div class="row">
+                                        <div class="form-group col-md-6 ">
+                                            <label for="inputState">Select Employee</label>
+                                            <select id="inputState" class="form-control is-invalid">
+                                                <option selected>Choose...</option>
+                                                <option>Festus </option>
+                                                <option>Festus </option>
+                                                <option>Festus </option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Please select an option
+                                            </div>
+                                        </div>
+
                                         <div class="form-group col-md-6">
                                             <label for="inputPassword3">Salary Due Date</label>
                                             <input type="text" class="form-control" id="inputPassword3">
                                         </div>
-                                        <div class="form-group col-md-6 ">
-                                            <label for="inputState">Deduction Due Date</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
-                                        </div>
-                                        <div class="form-group col-md-6 ">
-                                            <label for="inputState">Additional Payment Due Date</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="mini-card">
-                                    <div class="mini-card-header">
-                                        Prepare Payment Exception   
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">Select Employee</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
-                                        </div>
-                                        <div class="form-group col-md-6 ">
-                                            <label for="inputState">Salary Category</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
-                                        </div>
-                                    </div>
-                                    <div class="row">
                                         <div class="form-group col-md-6 ">
                                             <label for="inputState">Enter Deduction</label>
                                             <input type="text" class="form-control" id="inputPassword3">
@@ -645,62 +626,91 @@
                                             <label for="inputState">Deduction Amount</label>
                                             <input type="text" class="form-control" id="inputPassword3">
                                         </div>
-                                    </div>
-                                    <div class="row">
                                         <div class="form-group col-md-6 ">
                                             <label for="inputState">Re-Occuring Deduction</label>
                                             <div class=" align-items-center justify-content-start">
                                                 <div class="custom-control custom-radio col">
-                                                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                                    <input type="radio" id="customRadio1" name="customRadio"
+                                                        class="custom-control-input">
                                                     <label class="custom-control-label" for="customRadio1">Yes</label>
                                                 </div>
                                                 <div class="custom-control custom-radio col">
-                                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                    <input type="radio" id="customRadio2" name="customRadio"
+                                                        class="custom-control-input">
                                                     <label class="custom-control-label" for="customRadio2">No</label>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-group col-md-6 ">
+                                            <label for="inputState">Deduction Start Date</label>
+                                            <input type="text" class="form-control" id="inputPassword3">
+                                        </div>
+                                        <div class="form-group col-md-6 ">
+                                            <label for="inputState">Deduction End Date</label>
+                                            <input type="text" class="form-control" id="inputPassword3">
+                                        </div>
+                                        <div class="form-group col-md-6 ">
                                             <label for="inputState">Duration</label>
                                             <input type="text" class="form-control" id="inputPassword3">
                                         </div>
                                     </div>
+                                </div>
+
+                                <div class="mini-card">
+                                    <div class="mini-card-header">
+                                        Additional Payment
+                                    </div>
                                     <div class="row">
                                         <div class="form-group col-md-6 ">
                                             <label for="inputState">Enter Additional Payment</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
+                                            <select id="inputState" class="form-control is-invalid">
+                                                <option selected>Choose...</option>
+                                                <option>Maternity Payment </option>
+                                                <option>Reward </option>
+                                                <option>Profit </option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Please select an option
+                                            </div>
                                         </div>
                                         <div class="form-group col-md-6 ">
                                             <label for="inputState">Additional Payment Amount</label>
                                             <input type="text" class="form-control" id="inputPassword3">
                                         </div>
-                                    </div>
-                                    <div class="row">
                                         <div class="form-group col-md-6 ">
                                             <label for="inputState">Re-Occuring Additional Payment</label>
                                             <div class=" align-items-center justify-content-start">
                                                 <div class="custom-control custom-radio col">
-                                                    <input type="radio" id="customRadio3" name="customRadio2" class="custom-control-input">
-                                                    <label class="custom-control-label" for="customRadio3">Yes</label>
+                                                    <input type="radio" id="customRadio1" name="customRadio"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadio1">Yes</label>
                                                 </div>
                                                 <div class="custom-control custom-radio col">
-                                                    <input type="radio" id="customRadio4" name="customRadio2" class="custom-control-input">
-                                                    <label class="custom-control-label" for="customRadio4">No</label>
+                                                    <input type="radio" id="customRadio2" name="customRadio"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadio2">No</label>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-group col-md-6 ">
-                                            <label for="inputState">Duration</label>
+                                            <label for="inputState">Start Date</label>
+                                            <input type="text" class="form-control" id="inputPassword3">
+                                        </div>
+                                        <div class="form-group col-md-6 ">
+                                            <label for="inputState">End Date</label>
                                             <input type="text" class="form-control" id="inputPassword3">
                                         </div>
                                     </div>
-
                                 </div>
+
 
                                 <div class=" form-button">
                                     <a href="" class="button primary mr-3">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f6368" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z"/>
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-check" width="20" height="20"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f6368" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" />
                                             <path d="M5 12l5 5l10 -10" />
                                         </svg>
                                         Save
@@ -708,7 +718,7 @@
                                     <a href="#" class="button secondary">
                                         Cancel
                                     </a>
-                                </div>    
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -718,24 +728,25 @@
             </div>
             <!-- Page Contents Ends -->
 
-                        <!-- Custom Modal -->
-                        <div class="modal fade" id="deleteConfirmationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                              <div class="modal-content">
-                                <div class="modal-body">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    <img src="../../assets/images/deleteModal.svg" class="image" alt="">
-                                    <p>Are you sure you want to delete this Leave Category? </p>
-                                  <div class="modal-buttons">
-                                      <button type="button" class="button secondary" data-dismiss="modal">No, Cancel</button>
-                                      <button type="button" class="button primary">Yes, Delete</button>
-                                  </div>
-                                </div>
-                              </div>
+            <!-- Custom Modal -->
+            <div class="modal fade" id="deleteConfirmationModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <img src="../../assets/images/deleteModal.svg" class="image" alt="">
+                            <p>Are you sure you want to delete this Leave Category? </p>
+                            <div class="modal-buttons">
+                                <button type="button" class="button secondary" data-dismiss="modal">No, Cancel</button>
+                                <button type="button" class="button primary">Yes, Delete</button>
                             </div>
-                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- Footer Begins -->
             <footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-center">

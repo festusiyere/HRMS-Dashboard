@@ -83,7 +83,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="" class="nav-link active">
                             <!-- <i class="link-icon" data-feather="users"></i> -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-id" width="25"
                                 height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none"
@@ -218,7 +218,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link active">
+                        <a href="../Settings/myProfileView.html" class="nav-link">
                             <!-- <i class="link-icon" data-feather="settings"></i> -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings"
                                 width="25" height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none"
@@ -381,7 +381,7 @@
                             <div class="dropdown-menu" aria-labelledby="notificationDropdown">
                                 <div class="dropdown-header">
                                     <div class="head">
-                                        notifications
+                                        Nofications
                                     </div>
                                 </div>
                                 <div class="dropdown-body">
@@ -538,88 +538,57 @@
                         </svg>
                     </button>
                     <div>
-                        Settings
+                       Employee Management
                     </div>
                 </div>
                 <div class="page-content-inner">
                     <div class="inner-nav">
                         <nav class="nav">
-                            <a href="myProfileView.html" class="navlist">
+                            <a href="profileManagement.html" class="navlist">
                                 <div class="content">
-                                    <div class="title">My Profile</div>
+                                    <div class="title">Profile Mangement</div>
                                     <div class="details text-muted">
-                                        Details about your personal information
+                                        Details about an employee
                                     </div>
                                 </div>
                             </a>
-                            <a href="myCompanyView.html" class="navlist active">
+                            <a href="employeeLeaveView.html" class="navlist">
                                 <div class="content">
-                                    <div class="title">Company Setting</div>
+                                    <div class="title">Employee Leave History</div>
                                     <div class="details text-muted">
-                                        Details about your company information
+                                        histories of employees
                                     </div>
                                 </div>
                             </a>
-                            <a href="myTaxView.html" class="navlist">
+                            <a href="employeeExitView.html" class="navlist active">
                                 <div class="content">
-                                    <div class="title">Tax Setting</div>
+                                    <div class="title">Employee Exit</div>
                                     <div class="details text-muted">
-                                        Details about your tax information
+                                        Details about employee exit
                                     </div>
                                 </div>
                             </a>
-                            <a href="attendanceSettings.html" class="navlist">
+                            <a href="employeeTaxExemptionView.html" class="navlist">
                                 <div class="content">
-                                    <div class="title">Attendance Setting</div>
+                                    <div class="title">Employee Tax exemption</div>
                                     <div class="details text-muted">
-                                        Set your attendance days
+                                        Details about tax exemption
                                     </div>
                                 </div>
                             </a>
-                            <a href="leaveCategoryView.html" class="navlist">
+                            <a href="awardsView.html" class="navlist">
                                 <div class="content">
-                                    <div class="title">Leave Category</div>
+                                    <div class="title">Commendation/Awards</div>
                                     <div class="details text-muted">
-                                        Add and manage leaves
+                                        Details about employee awards
                                     </div>
                                 </div>
                             </a>
-                            <a href="notificationSettings.html" class="navlist">
+                            <a href="queriesView.html" class="navlist">
                                 <div class="content">
-                                    <div class="title">Notification Setting</div>
+                                    <div class="title">Queries</div>
                                     <div class="details text-muted">
-                                        Add and manage notifcations
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="departmentView.html" class="navlist">
-                                <div class="content">
-                                    <div class="title">Department Setting</div>
-                                    <div class="details text-muted">
-                                        Add and manage Departments
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="trainingView.html" class="navlist ">
-                                <div class="content">
-                                    <div class="title">Training Setting</div>
-                                    <div class="details text-muted">
-                                        Add and Remove Training
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="gradeView.html" class="navlist ">
-                                <div class="content">
-                                    <div class="title">Grade Setting</div>
-                                    <div class="details text-muted">
-                                        Add and Remove Grade
-                                    </div>
-                                </div>
-                            </a>                            <a href="accessControlView.html" class="navlist">
-                                <div class="content">
-                                    <div class="title">Access Control</div>
-                                    <div class="details text-muted">
-                                        Change users access
+                                        Details about employee queries
                                     </div>
                                 </div>
                             </a>
@@ -629,116 +598,140 @@
                     <div class="inner-page">
                         <div class="my-card">
                             <div class="my-card-header">
-                                Company Setting
+                                Employee Leave 
                             </div>
                             <div class="my-card-body">
-                                <div class="prof-img">
-                                    <div class="image">
-                                        <img src="../../assets/icons/company.png" alt="">
-                                    </div>
-                                </div>
 
                                 <div class="mini-card">
                                     <div class="mini-card-header">
-                                        Company Details
+                                        Add Leave Category
                                     </div>
-                                    <div class="form-group">
-                                        <label for="inputPassword3">Name</label>
-                                        <input type="text" class="form-control is-invalid" id="inputPassword3">
+                                    <div class="form-group ">
+                                        <label for="inputState">Employees Name</label>
+                                        <select id="inputState" class="form-control is-invalid">
+                                            <option selected="">Choose...</option>
+                                            <option>Ifeanyi Festus</option>
+                                            <option>Ifeanyi Iyere</option>
+                                            <option>Festus Iyere</option>
+                                        </select>
                                         <div class="invalid-feedback">
-                                            Please input a valid name
+                                            Please select an option
                                           </div>                
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">RC Number</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
-                                        </div>
-                                        <div class="form-group col-md-6 ">
-                                            <label for="inputState">Active Languae</label>
-                                            <select id="inputState" class="form-control is-invalid">
-                                                <option selected>Choose...</option>
-                                                <option>English</option>
-                                                <option>French</option>
-                                            </select>
-                                            <div class="invalid-feedback">
-                                                Please select an option
-                                              </div>                
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="inputPassword3">Address</label>
-                                        <input type="text" class="form-control" id="inputPassword3">
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">City</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">Country</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="mini-card">
-                                    <div class="mini-card-header">
-                                        Company Contact
-                                    </div>
-                                    <div class="row mb-3">
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">Phone Number</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">Mobile Number</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">Email</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">Website</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">Fax</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">Hot Line</label>
-                                            <input type="text" class="form-control" id="inputPassword3">
-                                        </div>
-                                    </div>
+                                    </div>                                    
                                 </div>
 
                                 <div class=" form-button">
                                     <a href="" class="button primary mr-3">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f6368" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z"/>
-                                            <path d="M5 12l5 5l10 -10" />
-                                        </svg>
-                                        Save
-                                    </a>
-                                    <a href="#" class="button secondary">
-                                        Cancel
+                                        Show
                                     </a>
                                 </div>    
+
+                                <div class="table-div">
+                                    <table class="my-table leave">
+                                        <thead>
+                                            <tr>
+                                                <th>Leave type</th>
+                                                <th>No. of Days</th>
+                                                <th>Date of leave</th>
+                                                <th>No. of Outstanding Leave</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Maternity</td>
+                                                <td>10</td>
+                                                <td>30th  Mar. 2020</td>
+                                                <td>3</td>
+                                                <td>Approved</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Maternity</td>
+                                                <td>10</td>
+                                                <td>30th  Mar. 2020</td>
+                                                <td>3</td>
+                                                <td>Rejected</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Maternity</td>
+                                                <td>10</td>
+                                                <td>30th  Mar. 2020</td>
+                                                <td>3</td>
+                                                <td>Pending</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Maternity</td>
+                                                <td>10</td>
+                                                <td>30th  Mar. 2020</td>
+                                                <td>3</td>
+                                                <td>Pending</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Maternity</td>
+                                                <td>10</td>
+                                                <td>30th  Mar. 2020</td>
+                                                <td>3</td>
+                                                <td>Rejected</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Maternity</td>
+                                                <td>10</td>
+                                                <td>30th  Mar. 2020</td>
+                                                <td>3</td>
+                                                <td>Approved</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Maternity</td>
+                                                <td>10</td>
+                                                <td>30th  Mar. 2020</td>
+                                                <td>3</td>
+                                                <td>Pending</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Maternity</td>
+                                                <td>10</td>
+                                                <td>30th  Mar. 2020</td>
+                                                <td>3</td>
+                                                <td>Approved</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Maternity</td>
+                                                <td>10</td>
+                                                <td>30th  Mar. 2020</td>
+                                                <td>3</td>
+                                                <td>Pending</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
                             </div>
                         </div>
                     </div>
-
                 </div>
 
             </div>
             <!-- Page Contents Ends -->
 
+                        <!-- Custom Modal -->
+                        <div class="modal fade" id="deleteConfirmationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                <div class="modal-body">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <img src="../../assets/images/deleteModal.svg" class="image" alt="">
+                                    <p>Are you sure you want to delete this Leave Category? </p>
+                                  <div class="modal-buttons">
+                                      <button type="button" class="button secondary" data-dismiss="modal">No, Cancel</button>
+                                      <button type="button" class="button primary">Yes, Delete</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
 
             <!-- Footer Begins -->
             <footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-center">
