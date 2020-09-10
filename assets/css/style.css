@@ -1933,3 +1933,39 @@ table.my-table{
 .staff_ss .value {
   font-size: 0.9rem !important;
 }
+
+.access-panel{
+  display: grid;
+  grid-auto-rows: minmax(30px, auto);
+  grid-template-columns: 200px repeat(5, 1fr);
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  margin: 10px 0;
+  border-bottom: 1px solid #e8eae9;
+}
+
+.access-panel:last-child{
+  border-bottom: none;
+}
+
+.access-panel.header{
+  font-weight: 500;
+  margin-bottom: 1rem;
+  border-bottom: none;
+}
+
+.access-panel .value{
+  padding: 10px auto;
+}
+
+.access-panel .name{
+  justify-self: start;
+  align-self: center;
+  font-weight: 500;
+}
+
+.access-panel label{
+  margin-bottom: 0 !important;
+}
