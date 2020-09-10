@@ -1475,6 +1475,10 @@ body::-webkit-scrollbar-track {
   text-align: right;
 }
 
+.tx-left{
+  text-align: left;
+}
+
 .button.form-aux {
   border-radius: 1.5rem;
 }
