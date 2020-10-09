@@ -1,6 +1,3 @@
-//   Initializing feather icon
-feather.replace();
-
 const body = document.querySelector("body");
 
 const navbar = document.querySelector("#navbar");

@@ -9,7 +9,7 @@ body {
   /* color: #26292c; */
   color: #32312f;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -614,7 +614,6 @@ header {
   }
 
   .login-form {
-    border: solid red 1px;
     width: 90%;
   }
 }

@@ -139,7 +139,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link active">
+                        <a href="" class="nav-link">
                             <!-- <i class="link-icon" data-feather="x-square"></i> -->
                             <svg width="25" height="25" viewBox="0 0 44 44" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -188,7 +188,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="" class="nav-link active">
                             <!-- <i class="link-icon" data-feather="book-open"></i> -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card"
                                 width="25" height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none"
@@ -540,25 +540,33 @@
                         </svg>
                     </button>
                     <div>
-                        Absence and Leave Management
+                        Performance Management
                     </div>
                 </div>
                 <div class="page-content-inner">
                     <div class="inner-nav">
                         <nav class="nav">
-                            <a href="" class="navlist active">
+                            <a href="profileManagement.html" class="navlist active">
                                 <div class="content">
-                                    <div class="title">Leave Request</div>
+                                    <div class="title">Key Performance Index</div>
                                     <div class="details text-muted">
-                                        Details about an leave request
+                                        Details about Key Performance Index
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="navlist">
+                            <a href="profileManagement.html" class="navlist">
                                 <div class="content">
-                                    <div class="title">Leave Record</div>
+                                    <div class="title">Appraisal</div>
                                     <div class="details text-muted">
-                                        Details about an leave record
+                                        Details about performance Appraisal
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="profileManagement.html" class="navlist">
+                                <div class="content">
+                                    <div class="title">Approval Workflow</div>
+                                    <div class="details text-muted">
+                                        Details about applicants and interviews
                                     </div>
                                 </div>
                             </a>
@@ -567,82 +575,77 @@
 
                     <div class="inner-page">
                         <div class="my-card">
-                            <div class="my-card-header">
-                                Leave Request
+                            <div class="my-card-header flex">
+                                <div>
+                                    Key Performance Index
+                                </div>
+                                <div class="right">
+                                    <a href="myCompanyEdit.html" class="button secondary mr-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-share" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f6368" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z"/>
+                                            <circle cx="6" cy="12" r="3" />
+                                            <circle cx="18" cy="6" r="3" />
+                                            <circle cx="18" cy="18" r="3" />
+                                            <line x1="8.7" y1="10.7" x2="15.3" y2="7.3" />
+                                            <line x1="8.7" y1="13.3" x2="15.3" y2="16.7" />
+                                          </svg>
+                                          Excel
+                                    </a>
+
+                                    <a href="" class="button secondary mr-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-share" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f6368" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z"/>
+                                            <circle cx="6" cy="12" r="3" />
+                                            <circle cx="18" cy="6" r="3" />
+                                            <circle cx="18" cy="18" r="3" />
+                                            <line x1="8.7" y1="10.7" x2="15.3" y2="7.3" />
+                                            <line x1="8.7" y1="13.3" x2="15.3" y2="16.7" />
+                                          </svg>
+                                          PDF
+                                    </a>
+
+                                    <a href="" class="button secondary mr-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-share" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f6368" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z"/>
+                                            <circle cx="6" cy="12" r="3" />
+                                            <circle cx="18" cy="6" r="3" />
+                                            <circle cx="18" cy="18" r="3" />
+                                            <line x1="8.7" y1="10.7" x2="15.3" y2="7.3" />
+                                            <line x1="8.7" y1="13.3" x2="15.3" y2="16.7" />
+                                          </svg>
+                                          CSV
+                                    </a>
+                                </div>
                             </div>
                             <div class="my-card-body">
-
-                                <div class="mini-card">
-                                    <div class="mini-card-header">
-                                        Leave Request Form
-                                    </div>
-                                    <div class=" text-right">
-                                        <a href="myProfileEdit.html" class="button secondary mr-3">
-                                              View Available Leave
-                                        </a>
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-group col-md-6">
-                                            <label for="inputState">Leave Type</label>
-                                            <select id="inputState" class="form-control">
-                                                <option selected="">Choose...</option>
-                                                <option>Maternity</option>
-                                                <option>Annual Leave</option>
-                                                <option>Casual Leave</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">No of Days</label>
-                                            <input type="number" class="form-control" id="inputPassword3">
-                                        </div>
-
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">Date Start</label>
-                                            <input type="date" class="form-control" id="inputPassword3">
-                                        </div>
-
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">Date End</label>
-                                            <input type="date" class="form-control" id="inputPassword3">
-                                        </div>
-
-                                    </div>
-                                    <div class=" form-button">
-                                        <a href="" class="button primary mr-3">
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                class="icon icon-tabler icon-tabler-check" width="20" height="20"
-                                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f6368" fill="none"
-                                                stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" />
-                                                <path d="M5 12l5 5l10 -10" />
-                                            </svg>
-                                            Apply
-                                        </a>
-                                        <a href="#" class="button secondary">
-                                            Cancel
-                                        </a>
-                                    </div>
+                                <div class="">
+                                    <a href="gradeEdit.html" class="button secondary form-aux">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f6368" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z"></path>
+                                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                        Apply for Job
+                                    </a>
                                 </div>
-
-
                                 <div class="table-div">
                                     <table class="my-table leave">
                                         <thead>
                                             <tr>
-                                                <th>Leave type</th>
-                                                <th>Date Start</th>
-                                                <th>Date End</th>
-                                                <th>No of Days</th>
+                                                <th>Key Performance Area</th>
+                                                <th>Key Performance</th>
+                                                <th>Applied To</th>
+                                                <th>Weight</th>
                                                 <th>Status</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Annual Leave</td>
-                                                <td>12th Mar. 2020</td>
-                                                <td>30th Mar. 2020</td>
-                                                <td>10</td>
+                                                <td>Individual</td>
+                                                <td>Recruits 5 new Users at the End of First Quater</td>
+                                                <td>Sales Department</td>
+                                                <td>20</td>
                                                 <td>Approved</td>
                                                 <td>
                                                     <button>
@@ -654,7 +657,8 @@
                                                             <path stroke="none" d="M0 0h24v24H0z" />
                                                             <path
                                                                 d="M9 7 h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
-                                                            <path d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
+                                                            <path
+                                                                d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
                                                             <line x1="16" y1="5" x2="19" y2="8" />
                                                         </svg>
                                                     </button>
@@ -662,10 +666,10 @@
                                             </tr>
 
                                             <tr>
-                                                <td>Annual Leave</td>
-                                                <td>12th Mar. 2020</td>
-                                                <td>30th Mar. 2020</td>
-                                                <td>10</td>
+                                                <td>Individual</td>
+                                                <td>Recruits 5 new Users at the End of First Quater</td>
+                                                <td>Sales Department</td>
+                                                <td>20</td>
                                                 <td>Approved</td>
                                                 <td>
                                                     <button>
@@ -677,7 +681,8 @@
                                                             <path stroke="none" d="M0 0h24v24H0z" />
                                                             <path
                                                                 d="M9 7 h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
-                                                            <path d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
+                                                            <path
+                                                                d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
                                                             <line x1="16" y1="5" x2="19" y2="8" />
                                                         </svg>
                                                     </button>
@@ -685,10 +690,10 @@
                                             </tr>
 
                                             <tr>
-                                                <td>Annual Leave</td>
-                                                <td>12th Mar. 2020</td>
-                                                <td>30th Mar. 2020</td>
-                                                <td>10</td>
+                                                <td>Individual</td>
+                                                <td>Recruits 5 new Users at the End of First Quater</td>
+                                                <td>Sales Department</td>
+                                                <td>20</td>
                                                 <td>Approved</td>
                                                 <td>
                                                     <button>
@@ -700,7 +705,8 @@
                                                             <path stroke="none" d="M0 0h24v24H0z" />
                                                             <path
                                                                 d="M9 7 h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
-                                                            <path d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
+                                                            <path
+                                                                d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
                                                             <line x1="16" y1="5" x2="19" y2="8" />
                                                         </svg>
                                                     </button>
@@ -708,10 +714,10 @@
                                             </tr>
 
                                             <tr>
-                                                <td>Annual Leave</td>
-                                                <td>12th Mar. 2020</td>
-                                                <td>30th Mar. 2020</td>
-                                                <td>10</td>
+                                                <td>Individual</td>
+                                                <td>Recruits 5 new Users at the End of First Quater</td>
+                                                <td>Sales Department</td>
+                                                <td>20</td>
                                                 <td>Approved</td>
                                                 <td>
                                                     <button>
@@ -723,7 +729,8 @@
                                                             <path stroke="none" d="M0 0h24v24H0z" />
                                                             <path
                                                                 d="M9 7 h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
-                                                            <path d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
+                                                            <path
+                                                                d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
                                                             <line x1="16" y1="5" x2="19" y2="8" />
                                                         </svg>
                                                     </button>
@@ -731,10 +738,10 @@
                                             </tr>
 
                                             <tr>
-                                                <td>Annual Leave</td>
-                                                <td>12th Mar. 2020</td>
-                                                <td>30th Mar. 2020</td>
-                                                <td>10</td>
+                                                <td>Individual</td>
+                                                <td>Recruits 5 new Users at the End of First Quater</td>
+                                                <td>Sales Department</td>
+                                                <td>20</td>
                                                 <td>Approved</td>
                                                 <td>
                                                     <button>
@@ -746,7 +753,32 @@
                                                             <path stroke="none" d="M0 0h24v24H0z" />
                                                             <path
                                                                 d="M9 7 h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
-                                                            <path d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
+                                                            <path
+                                                                d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
+                                                            <line x1="16" y1="5" x2="19" y2="8" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Individual</td>
+                                                <td>Recruits 5 new Users at the End of First Quater</td>
+                                                <td>Sales Department</td>
+                                                <td>20</td>
+                                                <td>Approved</td>
+                                                <td>
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                            class="icon icon-tabler icon-tabler-edit" width="20"
+                                                            height="20" viewBox="0 0 24 24" stroke-width="1.5"
+                                                            stroke="#5f6368" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <path
+                                                                d="M9 7 h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
+                                                            <path
+                                                                d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
                                                             <line x1="16" y1="5" x2="19" y2="8" />
                                                         </svg>
                                                     </button>
@@ -760,6 +792,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
 
             </div>

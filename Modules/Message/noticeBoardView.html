@@ -540,25 +540,41 @@
                         </svg>
                     </button>
                     <div>
-                        Absence and Leave Management
+                        Message
                     </div>
                 </div>
                 <div class="page-content-inner">
                     <div class="inner-nav">
                         <nav class="nav">
-                            <a href="" class="navlist active">
+                            <a href="" class="navlist">
                                 <div class="content">
-                                    <div class="title">Leave Request</div>
+                                    <div class="title">Chat</div>
                                     <div class="details text-muted">
-                                        Details about an leave request
+                                        Send, Recieve and View Messages
                                     </div>
                                 </div>
                             </a>
                             <a href="" class="navlist">
                                 <div class="content">
-                                    <div class="title">Leave Record</div>
+                                    <div class="title">Notifications</div>
                                     <div class="details text-muted">
-                                        Details about an leave record
+                                        View notifications
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="navlist active">
+                                <div class="content">
+                                    <div class="title">Notice Board</div>
+                                    <div class="details text-muted">
+                                        View notice board
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="navlist">
+                                <div class="content">
+                                    <div class="title">Memo</div>
+                                    <div class="details text-muted">
+                                        Create and View Memo
                                     </div>
                                 </div>
                             </a>
@@ -568,194 +584,173 @@
                     <div class="inner-page">
                         <div class="my-card">
                             <div class="my-card-header">
-                                Leave Request
+                                Notice Board
                             </div>
                             <div class="my-card-body">
+                                <div class=" form-button">
+                                    <a href="#" class="button secondary form-aux">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-plus" width="20" height="20"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f6368" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z"></path>
+                                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                        Create Notice
+                                    </a>
+                                </div>
 
-                                <div class="mini-card">
+                                <div class="mini-card notice-card">
                                     <div class="mini-card-header">
-                                        Leave Request Form
+                                        Notice/Event
                                     </div>
-                                    <div class=" text-right">
-                                        <a href="myProfileEdit.html" class="button secondary mr-3">
-                                              View Available Leave
-                                        </a>
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-group col-md-6">
-                                            <label for="inputState">Leave Type</label>
-                                            <select id="inputState" class="form-control">
-                                                <option selected="">Choose...</option>
-                                                <option>Maternity</option>
-                                                <option>Annual Leave</option>
-                                                <option>Casual Leave</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">No of Days</label>
-                                            <input type="number" class="form-control" id="inputPassword3">
-                                        </div>
-
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">Date Start</label>
-                                            <input type="date" class="form-control" id="inputPassword3">
-                                        </div>
-
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword3">Date End</label>
-                                            <input type="date" class="form-control" id="inputPassword3">
-                                        </div>
-
-                                    </div>
-                                    <div class=" form-button">
-                                        <a href="" class="button primary mr-3">
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                class="icon icon-tabler icon-tabler-check" width="20" height="20"
-                                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f6368" fill="none"
-                                                stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" />
-                                                <path d="M5 12l5 5l10 -10" />
-                                            </svg>
-                                            Apply
-                                        </a>
-                                        <a href="#" class="button secondary">
-                                            Cancel
-                                        </a>
+                                    <div class="table-div">
+                                        <table class="my-table leave">
+                                            <thead>
+                                                <tr>
+                                                    <th>Employee Name</th>
+                                                    <th>Department</th>
+                                                    <th>Leave type</th>
+                                                    <th>Date Start</th>
+                                                    <th>Date End</th>
+                                                    <th>No of Days</th>
+                                                    <th>Status</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Juhla Festus</td>
+                                                    <td>Developers</td>
+                                                    <td>Anual Leave</td>
+                                                    <td>12th Mar. 2020</td>
+                                                    <td>30th Mar. 2020</td>
+                                                    <td>10</td>
+                                                    <td>Approved</td>
+                                                    <td>
+                                                        <button>
+                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                class="icon icon-tabler icon-tabler-edit" width="20"
+                                                                height="20" viewBox="0 0 24 24" stroke-width="1.5"
+                                                                stroke="#5f6368" fill="none" stroke-linecap="round"
+                                                                stroke-linejoin="round">
+                                                                <path stroke="none" d="M0 0h24v24H0z" />
+                                                                <path
+                                                                    d="M9 7 h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
+                                                                <path d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
+                                                                <line x1="16" y1="5" x2="19" y2="8" />
+                                                            </svg>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+    
+                                                <tr>
+                                                    <td>Juhla Festus</td>
+                                                    <td>Developers</td>
+                                                    <td>Anual Leave</td>
+                                                    <td>12th Mar. 2020</td>
+                                                    <td>30th Mar. 2020</td>
+                                                    <td>10</td>
+                                                    <td>Approved</td>
+                                                    <td>
+                                                        <button>
+                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                class="icon icon-tabler icon-tabler-edit" width="20"
+                                                                height="20" viewBox="0 0 24 24" stroke-width="1.5"
+                                                                stroke="#5f6368" fill="none" stroke-linecap="round"
+                                                                stroke-linejoin="round">
+                                                                <path stroke="none" d="M0 0h24v24H0z" />
+                                                                <path
+                                                                    d="M9 7 h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
+                                                                <path d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
+                                                                <line x1="16" y1="5" x2="19" y2="8" />
+                                                            </svg>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+    
+                                                <tr>
+                                                    <td>Juhla Festus</td>
+                                                    <td>Developers</td>
+                                                    <td>Anual Leave</td>
+                                                    <td>12th Mar. 2020</td>
+                                                    <td>30th Mar. 2020</td>
+                                                    <td>10</td>
+                                                    <td>Approved</td>
+                                                    <td>
+                                                        <button>
+                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                class="icon icon-tabler icon-tabler-edit" width="20"
+                                                                height="20" viewBox="0 0 24 24" stroke-width="1.5"
+                                                                stroke="#5f6368" fill="none" stroke-linecap="round"
+                                                                stroke-linejoin="round">
+                                                                <path stroke="none" d="M0 0h24v24H0z" />
+                                                                <path
+                                                                    d="M9 7 h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
+                                                                <path d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
+                                                                <line x1="16" y1="5" x2="19" y2="8" />
+                                                            </svg>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+    
+                                                <tr>
+                                                    <td>Juhla Festus</td>
+                                                    <td>Developers</td>
+                                                    <td>Anual Leave</td>
+                                                    <td>12th Mar. 2020</td>
+                                                    <td>30th Mar. 2020</td>
+                                                    <td>10</td>
+                                                    <td>Approved</td>
+                                                    <td>
+                                                        <button>
+                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                class="icon icon-tabler icon-tabler-edit" width="20"
+                                                                height="20" viewBox="0 0 24 24" stroke-width="1.5"
+                                                                stroke="#5f6368" fill="none" stroke-linecap="round"
+                                                                stroke-linejoin="round">
+                                                                <path stroke="none" d="M0 0h24v24H0z" />
+                                                                <path
+                                                                    d="M9 7 h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
+                                                                <path d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
+                                                                <line x1="16" y1="5" x2="19" y2="8" />
+                                                            </svg>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+    
+                                                <tr>
+                                                    <td>Juhla Festus</td>
+                                                    <td>Developers</td>
+                                                    <td>Anual Leave</td>
+                                                    <td>12th Mar. 2020</td>
+                                                    <td>30th Mar. 2020</td>
+                                                    <td>10</td>
+                                                    <td>Approved</td>
+                                                    <td>
+                                                        <button>
+                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                class="icon icon-tabler icon-tabler-edit" width="20"
+                                                                height="20" viewBox="0 0 24 24" stroke-width="1.5"
+                                                                stroke="#5f6368" fill="none" stroke-linecap="round"
+                                                                stroke-linejoin="round">
+                                                                <path stroke="none" d="M0 0h24v24H0z" />
+                                                                <path
+                                                                    d="M9 7 h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
+                                                                <path d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
+                                                                <line x1="16" y1="5" x2="19" y2="8" />
+                                                            </svg>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+    
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
 
 
-                                <div class="table-div">
-                                    <table class="my-table leave">
-                                        <thead>
-                                            <tr>
-                                                <th>Leave type</th>
-                                                <th>Date Start</th>
-                                                <th>Date End</th>
-                                                <th>No of Days</th>
-                                                <th>Status</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Annual Leave</td>
-                                                <td>12th Mar. 2020</td>
-                                                <td>30th Mar. 2020</td>
-                                                <td>10</td>
-                                                <td>Approved</td>
-                                                <td>
-                                                    <button>
-                                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                                            class="icon icon-tabler icon-tabler-edit" width="20"
-                                                            height="20" viewBox="0 0 24 24" stroke-width="1.5"
-                                                            stroke="#5f6368" fill="none" stroke-linecap="round"
-                                                            stroke-linejoin="round">
-                                                            <path stroke="none" d="M0 0h24v24H0z" />
-                                                            <path
-                                                                d="M9 7 h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
-                                                            <path d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
-                                                            <line x1="16" y1="5" x2="19" y2="8" />
-                                                        </svg>
-                                                    </button>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>Annual Leave</td>
-                                                <td>12th Mar. 2020</td>
-                                                <td>30th Mar. 2020</td>
-                                                <td>10</td>
-                                                <td>Approved</td>
-                                                <td>
-                                                    <button>
-                                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                                            class="icon icon-tabler icon-tabler-edit" width="20"
-                                                            height="20" viewBox="0 0 24 24" stroke-width="1.5"
-                                                            stroke="#5f6368" fill="none" stroke-linecap="round"
-                                                            stroke-linejoin="round">
-                                                            <path stroke="none" d="M0 0h24v24H0z" />
-                                                            <path
-                                                                d="M9 7 h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
-                                                            <path d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
-                                                            <line x1="16" y1="5" x2="19" y2="8" />
-                                                        </svg>
-                                                    </button>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>Annual Leave</td>
-                                                <td>12th Mar. 2020</td>
-                                                <td>30th Mar. 2020</td>
-                                                <td>10</td>
-                                                <td>Approved</td>
-                                                <td>
-                                                    <button>
-                                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                                            class="icon icon-tabler icon-tabler-edit" width="20"
-                                                            height="20" viewBox="0 0 24 24" stroke-width="1.5"
-                                                            stroke="#5f6368" fill="none" stroke-linecap="round"
-                                                            stroke-linejoin="round">
-                                                            <path stroke="none" d="M0 0h24v24H0z" />
-                                                            <path
-                                                                d="M9 7 h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
-                                                            <path d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
-                                                            <line x1="16" y1="5" x2="19" y2="8" />
-                                                        </svg>
-                                                    </button>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>Annual Leave</td>
-                                                <td>12th Mar. 2020</td>
-                                                <td>30th Mar. 2020</td>
-                                                <td>10</td>
-                                                <td>Approved</td>
-                                                <td>
-                                                    <button>
-                                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                                            class="icon icon-tabler icon-tabler-edit" width="20"
-                                                            height="20" viewBox="0 0 24 24" stroke-width="1.5"
-                                                            stroke="#5f6368" fill="none" stroke-linecap="round"
-                                                            stroke-linejoin="round">
-                                                            <path stroke="none" d="M0 0h24v24H0z" />
-                                                            <path
-                                                                d="M9 7 h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
-                                                            <path d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
-                                                            <line x1="16" y1="5" x2="19" y2="8" />
-                                                        </svg>
-                                                    </button>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>Annual Leave</td>
-                                                <td>12th Mar. 2020</td>
-                                                <td>30th Mar. 2020</td>
-                                                <td>10</td>
-                                                <td>Approved</td>
-                                                <td>
-                                                    <button>
-                                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                                            class="icon icon-tabler icon-tabler-edit" width="20"
-                                                            height="20" viewBox="0 0 24 24" stroke-width="1.5"
-                                                            stroke="#5f6368" fill="none" stroke-linecap="round"
-                                                            stroke-linejoin="round">
-                                                            <path stroke="none" d="M0 0h24v24H0z" />
-                                                            <path
-                                                                d="M9 7 h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
-                                                            <path d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
-                                                            <line x1="16" y1="5" x2="19" y2="8" />
-                                                        </svg>
-                                                    </button>
-                                                </td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
 
                             </div>
                         </div>
@@ -764,26 +759,6 @@
 
             </div>
             <!-- Page Contents Ends -->
-
-            <!-- Custom Modal -->
-            <div class="modal fade" id="deleteConfirmationModal" tabindex="-1" role="dialog"
-                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <img src="../../assets/images/deleteModal.svg" class="image" alt="">
-                            <p>Are you sure you want to delete this Leave Category? </p>
-                            <div class="modal-buttons">
-                                <button type="button" class="button secondary" data-dismiss="modal">No, Cancel</button>
-                                <button type="button" class="button primary">Yes, Delete</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <!-- Footer Begins -->
             <footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-center">
