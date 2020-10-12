@@ -2705,6 +2705,11 @@ table.my-table {
   min-height: calc(10% - 3.5rem);
 }
 
+._myModal.mesg {
+  max-width: 800px;
+  min-height: calc(10% - 3.5rem);
+}
+
 ._myModal ._modal_header {
   border-bottom: 1px solid #e8ecee;
   border-radius: 4px 4px 0 0;
@@ -2754,22 +2759,22 @@ table.my-table {
 
 ._modal-content ._list .lbel {
   color: #6f7782;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 ._modal-content ._list ._vl {
   font-weight: 500;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
-._modal-content ._dbut{
+._modal-content ._dbut {
   display: flex;
   justify-content: flex-end;
   margin-top: 1rem;
 }
 
 ._modal-content ._dbut button {
-  font-size: .8rem;
+  font-size: 0.8rem;
   background-color: transparent;
   border-radius: 4px;
   box-shadow: none;
@@ -2797,4 +2802,88 @@ table.my-table {
 ._modal-content ._dbut button.req {
   color: #f8bf7b;
   border-color: #fbdec4;
+}
+
+._myModal.mesg .title {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+._myModal ._mem_o {
+  margin: 1rem 0;
+  line-height: 1.9;
+}
+
+._myModal.prof {
+  min-width: 50vw;
+  height: 80vh;
+  min-height: calc(10% - 3.5rem);
+}
+
+._myModal.prof ._modal-content {
+  overflow-y: scroll;
+  height: 90%;
+}
+
+._myModal .prof-img {
+  padding: 8px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+._myModal .prof-img .image {
+  border: solid 2px #e7e9eb;
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+  padding: 2px;
+  border-radius: 50%;
+  /* box-shadow:  -1px 1px 5px #ccc;; */
+}
+._myModal .prof-img .name {
+  margin: 10px;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 1.05rem;
+}
+
+._myModal .prof-img .id {
+  font-weight: 400;
+  font-size: 1.05rem;
+}
+
+._myModal .prof-img > div > img {
+  width: 100%;
+  height: auto;
+}
+
+._myModal.job_offer {
+  max-width: 800px;
+  min-height: calc(10% - 3.5rem);
+}
+
+._myModal.job_offer .name {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+._myModal.job_offer .title {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 1.3rem;
+  line-height: 1.6;
+}
+._myModal.job_offer ._add {
+  font-weight: 500;
+  margin-bottom: 2rem;
+  line-height: 1.9;
+}
+
+._myModal.job_offer .mail {
+  line-height: 1.9;
 }
