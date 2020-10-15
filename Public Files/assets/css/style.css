@@ -638,7 +638,7 @@ input.form-control,
 select.form-control {
   display: block;
   width: 100%;
-  padding: 0.2rem 0.7rem;
+  padding: 0.2rem 0.4rem;
   line-height: 1;
   color: #383736;
   background-clip: padding-box;
@@ -646,7 +646,7 @@ select.form-control {
   font-weight: 600;
   border: solid 1.2px #b1b1b1;
   border-radius: 4px;
-  height: 2.9rem;
+  height: 2.4rem;
   transition: all 0.3s ease-in-out;
 }
 

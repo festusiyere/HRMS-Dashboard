@@ -1828,6 +1828,10 @@ table.my-table {
 }
 
 /* Modals */
+.modal{
+background-color: rgba(128, 128, 128, .19);
+}
+
 .modal-body {
   position: relative;
   border: none;
@@ -2698,6 +2702,8 @@ table.my-table {
 .modal.show ._myModal {
   -webkit-transform: none;
   transform: none;
+  max-height: 100%;
+  overflow: auto;
 }
 
 ._myModal.req {
@@ -2862,6 +2868,7 @@ table.my-table {
 }
 
 ._myModal.job_offer {
+  min-width: 500px;
   max-width: 800px;
   min-height: calc(10% - 3.5rem);
 }
@@ -2875,7 +2882,6 @@ table.my-table {
 ._myModal.job_offer .title {
   font-weight: 500;
   font-size: 1rem;
-  margin-bottom: 1.3rem;
   line-height: 1.6;
 }
 ._myModal.job_offer ._add {
@@ -2886,4 +2892,123 @@ table.my-table {
 
 ._myModal.job_offer .mail {
   line-height: 1.9;
+}
+
+.applicant-list {
+}
+
+.applicant-list .applicant:hover {
+  background-color: #fbfafa;
+  border-radius: 3px;
+}
+
+.applicant-list .applicant {
+  display: grid;
+  grid-template-columns: 4fr 2fr 40px;
+  padding: 10px;
+  color: initial;
+}
+
+.applicant-list .applicant .nme {
+  font-weight: 500;
+}
+
+.applicant-list .applicant .bullet {
+  color: #6f7782;
+}
+
+.applicant-list .applicant:not(:last-child) {
+  border-bottom: 1px solid #e9eaeb;
+}
+
+.applicant-details .detail {
+  display: grid;
+  grid-template-columns: 200px auto;
+  padding: 5px 0;
+  gap: 20px;
+}
+
+.applicant-details .detail .lbl {
+  color: #6f7782;
+  font-size: 0.9rem;
+}
+
+.applicant-details .detail .vlv {
+  font-weight: 500;
+  justify-content: start;
+}
+
+.applicant-comment {
+  background-color: #f6f8f9;
+  padding: 20px;
+  position: relative;
+  margin-top: 50px;
+  border-radius: 7px;
+  border: solid 1px #e7e9eb;
+}
+
+.applicant-comment .comments {
+  padding: 5px 0px;
+}
+
+.applicant-comment .comments .comment {
+  padding: 15px 0px 15px;
+  border-bottom: #e8ecee 1px solid;
+}
+
+.applicant-comment .comments .comment .fst {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.applicant-comment .comments .comment .dte {
+  color: #6f7782;
+  display: inline;
+  font-size: 0.8rem;
+  margin-left: 8px;
+  white-space: nowrap;
+}
+
+.applicant-comment .comments .comment .nme {
+  font-weight: 500;
+}
+
+.applicant-comment .comments .comment .cmt {
+  font-size: 0.9rem;
+  margin-top: 2px;
+  width: 95%;
+}
+
+.applicant-comment .thumb {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.applicant-comment .thumb img {
+  width: 100%;
+}
+
+.applicant-comment .grr {
+  display: grid;
+  grid-template-columns: 32px auto;
+  gap: 10px;
+}
+
+.applicant-comment .comment-box {
+  padding: 15px 0px 5px;
+}
+
+.applicant-comment .comment-box button{
+  margin-top: 20px;
+}
+
+.applicant-actions{
+  display: flex;
+  margin: 20px 0;
+}
+.applicant-actions .button{
+  margin-right: 1rem;
 }
