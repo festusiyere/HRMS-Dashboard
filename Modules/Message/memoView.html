@@ -83,7 +83,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link active">
+                        <a href="" class="nav-link">
                             <!-- <i class="link-icon" data-feather="users"></i> -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-id" width="25"
                                 height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none"
@@ -139,7 +139,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="" class="nav-link active">
                             <!-- <i class="link-icon" data-feather="x-square"></i> -->
                             <svg width="25" height="25" viewBox="0 0 44 44" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -530,65 +530,51 @@
             <div class="page-content">
                 <div class="page-content-title">
                     <button class="page-hamburger" id="page-hamburger">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#2e343b" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#2e343b" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" />
                             <circle cx="12" cy="12" r="1" />
                             <circle cx="12" cy="19" r="1" />
                             <circle cx="12" cy="5" r="1" />
                         </svg>
                     </button>
                     <div>
-                       Employee Management
+                        Message
                     </div>
                 </div>
                 <div class="page-content-inner">
                     <div class="inner-nav">
                         <nav class="nav">
-                            <a href="profileManagement.html" class="navlist">
+                            <a href="" class="navlist">
                                 <div class="content">
-                                    <div class="title">Profile Mangement</div>
+                                    <div class="title">Chat</div>
                                     <div class="details text-muted">
-                                        Details about an employee
+                                        Send, Recieve and View Messages
                                     </div>
                                 </div>
                             </a>
-                            <a href="employeeLeaveView.html" class="navlist">
+                            <a href="" class="navlist">
                                 <div class="content">
-                                    <div class="title">Employee Leave History</div>
+                                    <div class="title">Notifications</div>
                                     <div class="details text-muted">
-                                        histories of employees
+                                        View notifications
                                     </div>
                                 </div>
                             </a>
-                            <a href="employeeExitView.html" class="navlist active">
+                            <a href="" class="navlist">
                                 <div class="content">
-                                    <div class="title">Employee Exit</div>
+                                    <div class="title">Notice Board</div>
                                     <div class="details text-muted">
-                                        Details about employee exit
+                                        View notice board
                                     </div>
                                 </div>
                             </a>
-                            <a href="employeeTaxExemptionView.html" class="navlist">
+                            <a href="" class="navlist active">
                                 <div class="content">
-                                    <div class="title">Employee Tax exemption</div>
+                                    <div class="title">Memo</div>
                                     <div class="details text-muted">
-                                        Details about tax exemption
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="awardsView.html" class="navlist">
-                                <div class="content">
-                                    <div class="title">Commendation/Awards</div>
-                                    <div class="details text-muted">
-                                        Details about employee awards
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="queriesView.html" class="navlist">
-                                <div class="content">
-                                    <div class="title">Queries</div>
-                                    <div class="details text-muted">
-                                        Details about employee queries
+                                        Create and View Memo
                                     </div>
                                 </div>
                             </a>
@@ -596,116 +582,69 @@
                     </div>
 
                     <div class="inner-page">
-                        <div class="my-card">
-                            <div class="my-card-header">
-                                Employee Leave History
-                            </div>
-                            <div class="my-card-body">
-
-                                <div class="mini-card">
-                                    <div class="mini-card-header">
-                                        Employee Leave information
+                        <div class="my-card view-notice">
+                            <div class="notice-top">
+                                <div class="user">
+                                    <div class="thumb">
+                                        <img src="../../assets/icons/user.png" class="user-image" alt="profile">
                                     </div>
-                                    <div class="form-group ">
-                                        <label for="inputState">Employees Name</label>
-                                        <select id="inputState" class="form-control is-invalid">
-                                            <option selected="">Choose...</option>
-                                            <option>Ifeanyi Festus</option>
-                                            <option>Ifeanyi Iyere</option>
-                                            <option>Festus Iyere</option>
-                                        </select>
-                                        <div class="invalid-feedback">
-                                            Please select an option
-                                          </div>                
-                                    </div>                                    
+                                    <div class="dt">
+                                        <div class="name">
+                                            Iyere Festus
+                                        </div>
+                                        <div class="time">
+                                            Jul 8, 2020, 8:00 AM
+                                        </div>
+                                    </div>
                                 </div>
-
-                                <div class=" form-button">
-                                    <a href="" class="button primary mr-3">
-                                        Show
-                                    </a>
-                                </div>    
-
-                                <div class="table-div">
-                                    <table class="my-table leave">
-                                        <thead>
-                                            <tr>
-                                                <th>Leave type</th>
-                                                <th>No. of Days</th>
-                                                <th>Date of leave</th>
-                                                <th>No. of Outstanding Leave</th>
-                                                <th>Status</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Maternity</td>
-                                                <td>10</td>
-                                                <td>30th  Mar. 2020</td>
-                                                <td>3</td>
-                                                <td>Approved</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Maternity</td>
-                                                <td>10</td>
-                                                <td>30th  Mar. 2020</td>
-                                                <td>3</td>
-                                                <td>Rejected</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Maternity</td>
-                                                <td>10</td>
-                                                <td>30th  Mar. 2020</td>
-                                                <td>3</td>
-                                                <td>Pending</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Maternity</td>
-                                                <td>10</td>
-                                                <td>30th  Mar. 2020</td>
-                                                <td>3</td>
-                                                <td>Pending</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Maternity</td>
-                                                <td>10</td>
-                                                <td>30th  Mar. 2020</td>
-                                                <td>3</td>
-                                                <td>Rejected</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Maternity</td>
-                                                <td>10</td>
-                                                <td>30th  Mar. 2020</td>
-                                                <td>3</td>
-                                                <td>Approved</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Maternity</td>
-                                                <td>10</td>
-                                                <td>30th  Mar. 2020</td>
-                                                <td>3</td>
-                                                <td>Pending</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Maternity</td>
-                                                <td>10</td>
-                                                <td>30th  Mar. 2020</td>
-                                                <td>3</td>
-                                                <td>Approved</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Maternity</td>
-                                                <td>10</td>
-                                                <td>30th  Mar. 2020</td>
-                                                <td>3</td>
-                                                <td>Pending</td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
+                                <div class="nvg">
+                                    <div class="nv prv">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            viewBox="0 0 448 512" class="">
+                                            <path fill="currentColor"
+                                                d="M395.4 159.9H256V75c0-35.5-43-53.5-68.3-28.3L15.4 218.8c-20.6 20.6-20.6 53.8 0 74.4l172.3 172.1c25.1 25.1 68.3 7.4 68.3-28.3v-85h139.4c29 0 52.6-23.6 52.6-52.6v-86.9c0-29-23.6-52.6-52.6-52.6zM416 299.4c0 11.4-9.2 20.6-20.6 20.6H224v117c0 7.1-8.6 10.7-13.7 5.7L38 270.6c-8-8-8-21.1 0-29.1L210.3 69.4c5-5 13.7-1.5 13.7 5.7v117h171.4c11.4 0 20.6 9.2 20.6 20.6z"
+                                                class="">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="nv nxt">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            viewBox="0 0 448 512"
+                                            class="svg-inline--fa fa-arrow-alt-right fa-w-14 fa-2x">
+                                            <path fill="currentColor"
+                                                d="M32 212.57A20.57 20.57 0 0 1 52.57 192H224V75a8 8 0 0 1 13.66-5.66L410 241.44a20.56 20.56 0 0 1 0 29.11L237.66 442.63A8 8 0 0 1 224 437V320H52.57A20.57 20.57 0 0 1 32 299.42v-86.85m-32 0v86.85A52.63 52.63 0 0 0 52.57 352H192v85c0 35.51 43 53.5 68.27 28.3l172.3-172.08a52.55 52.55 0 0 0 0-74.4L260.27 46.71C235.15 21.62 192 39.36 192 75v85H52.57A52.63 52.63 0 0 0 0 212.57z"
+                                                class="">
+                                            </path>
+                                        </svg>
+                                    </div>
                                 </div>
+                            </div>
 
+                            <div class="sbj">
+                                Office Party
+                            </div>
+
+                            <div class="cnt">
+                                Hello All,<br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sequi deleniti quia
+                                velit, ab sint et distinctio! Sequi, similique? Ex praesentium eos ullam nemo! Facilis,
+                                incidunt. Reiciendis eveniet non quia delectus totam ex, error obcaecati tempore, itaque
+                                ad vero distinctio ipsam at quidem ipsum sapiente earum sequi, excepturi dolorem
+                                quibusdam in? Porro, fuga magnam nisi vel nulla expedita excepturi asperiores eius iste,
+                                aliquid a consequuntur quasi non culpa ipsa nemo perferendis. Labore, enim dolores, quam
+                                temporibus quis ex voluptatibus ullam necessitatibus aut ut officia nesciunt magni sint
+                                quasi alias, deserunt blanditiis? Sequi ipsa deleniti eligendi cum assumenda dicta
+                                tempora laudantium officiis error sapiente hic ex ducimus nemo quos, suscipit laborum
+                                voluptas ab inventore velit nisi voluptatibus aliquid? Deleniti dolore tempore eaque
+                                repudiandae ipsam expedita veritatis cumque hic fuga. Deleniti quaerat nostrum veniam
+                                voluptatum exercitationem asperiores odit eius omnis enim similique vero accusantium,
+                                nihil laudantium quos, dolores officiis hic libero nesciunt cum. Illum neque pariatur
+                                quasi qui! Obcaecati, voluptatum repudiandae esse iure animi ad, amet, accusantium rem
+                                eius facere eveniet quibusdam praesentium itaque vitae harum magni exercitationem
+                                ducimus excepturi a non! Architecto esse ad aliquid, nihil sed error voluptate maxime
+                                illum facere, officia ipsam. Ducimus, cumque? 
+                                <br>
+                                Thank you
                             </div>
                         </div>
                     </div>
@@ -713,25 +652,6 @@
 
             </div>
             <!-- Page Contents Ends -->
-
-                        <!-- Custom Modal -->
-                        <div class="modal fade" id="deleteConfirmationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                              <div class="modal-content">
-                                <div class="modal-body">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    <img src="../../assets/images/deleteModal.svg" class="image" alt="">
-                                    <p>Are you sure you want to delete this Leave Category? </p>
-                                  <div class="modal-buttons">
-                                      <button type="button" class="button secondary" data-dismiss="modal">No, Cancel</button>
-                                      <button type="button" class="button primary">Yes, Delete</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
 
             <!-- Footer Begins -->
             <footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-center">

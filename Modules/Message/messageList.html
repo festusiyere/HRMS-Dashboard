@@ -83,7 +83,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link active">
+                        <a href="" class="nav-link">
                             <!-- <i class="link-icon" data-feather="users"></i> -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-id" width="25"
                                 height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none"
@@ -139,7 +139,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="" class="nav-link active">
                             <!-- <i class="link-icon" data-feather="x-square"></i> -->
                             <svg width="25" height="25" viewBox="0 0 44 44" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -530,208 +530,394 @@
             <div class="page-content">
                 <div class="page-content-title">
                     <button class="page-hamburger" id="page-hamburger">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#2e343b" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#2e343b" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" />
                             <circle cx="12" cy="12" r="1" />
                             <circle cx="12" cy="19" r="1" />
                             <circle cx="12" cy="5" r="1" />
                         </svg>
                     </button>
                     <div>
-                       Employee Management
+                        Message
                     </div>
                 </div>
                 <div class="page-content-inner">
                     <div class="inner-nav">
                         <nav class="nav">
-                            <a href="profileManagement.html" class="navlist">
+                            <a href="" class="navlist active">
                                 <div class="content">
-                                    <div class="title">Profile Mangement</div>
+                                    <div class="title">Chat</div>
                                     <div class="details text-muted">
-                                        Details about an employee
+                                        Send, Recieve and View Messages
                                     </div>
                                 </div>
                             </a>
-                            <a href="employeeLeaveView.html" class="navlist">
+                            <a href="" class="navlist">
                                 <div class="content">
-                                    <div class="title">Employee Leave History</div>
+                                    <div class="title">Notifications</div>
                                     <div class="details text-muted">
-                                        histories of employees
+                                        View notifications
                                     </div>
                                 </div>
                             </a>
-                            <a href="employeeExitView.html" class="navlist active">
+                            <a href="" class="navlist ">
                                 <div class="content">
-                                    <div class="title">Employee Exit</div>
+                                    <div class="title">Notice Board</div>
                                     <div class="details text-muted">
-                                        Details about employee exit
+                                        View notice board
                                     </div>
                                 </div>
                             </a>
-                            <a href="employeeTaxExemptionView.html" class="navlist">
+                            <a href="" class="navlist">
                                 <div class="content">
-                                    <div class="title">Employee Tax exemption</div>
+                                    <div class="title">Memo</div>
                                     <div class="details text-muted">
-                                        Details about tax exemption
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="awardsView.html" class="navlist">
-                                <div class="content">
-                                    <div class="title">Commendation/Awards</div>
-                                    <div class="details text-muted">
-                                        Details about employee awards
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="queriesView.html" class="navlist">
-                                <div class="content">
-                                    <div class="title">Queries</div>
-                                    <div class="details text-muted">
-                                        Details about employee queries
+                                        Create and View Memo
                                     </div>
                                 </div>
                             </a>
                         </nav>
                     </div>
 
-                    <div class="inner-page">
-                        <div class="my-card">
-                            <div class="my-card-header">
-                                Employee Leave History
+                    <div class="inner-page chat">
+                        <div class="message_list">
+                            <div class="search">
+                                <div class="search_bar">
+                                    <input type="text" placeholder="Search Chat">
+                                </div>
                             </div>
-                            <div class="my-card-body">
+                            <div class="list_main">
+                                <div class="list">
+                                    <div class="item open">
+                                        <div class="img">
+                                            <div>
+                                                <img src="../../assets/icons/user.png" class="" alt="img">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <div class="_f">
+                                                <div class="name">
+                                                    Iyere Festus
+                                                </div>
+                                                <div class="dtl">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. saepe
+                                                </div>
+                                            </div>
+                                            <div class="_g">
+                                                <div class="date">
+                                                    1hr
+                                                </div>
+                                                <div class="count">
+                                                    2
+                                                </div>
+                                            </div>
 
-                                <div class="mini-card">
-                                    <div class="mini-card-header">
-                                        Employee Leave information
+                                        </div>
                                     </div>
-                                    <div class="form-group ">
-                                        <label for="inputState">Employees Name</label>
-                                        <select id="inputState" class="form-control is-invalid">
-                                            <option selected="">Choose...</option>
-                                            <option>Ifeanyi Festus</option>
-                                            <option>Ifeanyi Iyere</option>
-                                            <option>Festus Iyere</option>
-                                        </select>
-                                        <div class="invalid-feedback">
-                                            Please select an option
-                                          </div>                
-                                    </div>                                    
+                                    <div class="item unread online">
+                                        <div class="img">
+                                            <div>
+                                                <img src="../../assets/icons/user.png" class="" alt="img">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <div class="_f">
+                                                <div class="name">
+                                                    Iyere Festus
+                                                </div>
+                                                <div class="dtl">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. saepe
+                                                </div>
+                                            </div>
+                                            <div class="_g">
+                                                <div class="date">
+                                                    1hr
+                                                </div>
+                                                <div class="count">
+                                                    2
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="item unread online">
+                                        <div class="img">
+                                            <div>
+                                                <img src="../../assets/icons/user.png" class="" alt="img">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <div class="_f">
+                                                <div class="name">
+                                                    Iyere Festus
+                                                </div>
+                                                <div class="dtl">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. saepe
+                                                </div>
+                                            </div>
+                                            <div class="_g">
+                                                <div class="date">
+                                                    1hr
+                                                </div>
+                                                <div class="count">
+                                                    2
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="item unread online">
+                                        <div class="img">
+                                            <div>
+                                                <img src="../../assets/icons/user.png" class="" alt="img">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <div class="_f">
+                                                <div class="name">
+                                                    Iyere Festus
+                                                </div>
+                                                <div class="dtl">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. saepe
+                                                </div>
+                                            </div>
+                                            <div class="_g">
+                                                <div class="date">
+                                                    1hr
+                                                </div>
+                                                <div class="count">
+                                                    2
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <div>
+                                                <img src="../../assets/icons/user.png" class="" alt="img">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <div class="_f">
+                                                <div class="name">
+                                                    Iyere Festus
+                                                </div>
+                                                <div class="dtl">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. saepe
+                                                </div>
+                                            </div>
+                                            <div class="_g">
+                                                <div class="date">
+                                                    1hr
+                                                </div>
+                                                <div class="count">
+                                                    2
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="img">
+                                            <div>
+                                                <img src="../../assets/icons/user.png" class="" alt="img">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <div class="_f">
+                                                <div class="name">
+                                                    Iyere Festus
+                                                </div>
+                                                <div class="dtl">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. saepe
+                                                </div>
+                                            </div>
+                                            <div class="_g">
+                                                <div class="date">
+                                                    1hr
+                                                </div>
+                                                <div class="count">
+                                                    2
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <div>
+                                                <img src="../../assets/icons/user.png" class="" alt="img">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <div class="_f">
+                                                <div class="name">
+                                                    Iyere Festus
+                                                </div>
+                                                <div class="dtl">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. saepe
+                                                </div>
+                                            </div>
+                                            <div class="_g">
+                                                <div class="date">
+                                                    1hr
+                                                </div>
+                                                <div class="count">
+                                                    2
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="new">
+                                <div class="start_chat" title="Add Chat">
+                                    Add Chat
+                                </div>
+                            </div>
 
-                                <div class=" form-button">
-                                    <a href="" class="button primary mr-3">
-                                        Show
-                                    </a>
-                                </div>    
-
-                                <div class="table-div">
-                                    <table class="my-table leave">
-                                        <thead>
-                                            <tr>
-                                                <th>Leave type</th>
-                                                <th>No. of Days</th>
-                                                <th>Date of leave</th>
-                                                <th>No. of Outstanding Leave</th>
-                                                <th>Status</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Maternity</td>
-                                                <td>10</td>
-                                                <td>30th  Mar. 2020</td>
-                                                <td>3</td>
-                                                <td>Approved</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Maternity</td>
-                                                <td>10</td>
-                                                <td>30th  Mar. 2020</td>
-                                                <td>3</td>
-                                                <td>Rejected</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Maternity</td>
-                                                <td>10</td>
-                                                <td>30th  Mar. 2020</td>
-                                                <td>3</td>
-                                                <td>Pending</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Maternity</td>
-                                                <td>10</td>
-                                                <td>30th  Mar. 2020</td>
-                                                <td>3</td>
-                                                <td>Pending</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Maternity</td>
-                                                <td>10</td>
-                                                <td>30th  Mar. 2020</td>
-                                                <td>3</td>
-                                                <td>Rejected</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Maternity</td>
-                                                <td>10</td>
-                                                <td>30th  Mar. 2020</td>
-                                                <td>3</td>
-                                                <td>Approved</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Maternity</td>
-                                                <td>10</td>
-                                                <td>30th  Mar. 2020</td>
-                                                <td>3</td>
-                                                <td>Pending</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Maternity</td>
-                                                <td>10</td>
-                                                <td>30th  Mar. 2020</td>
-                                                <td>3</td>
-                                                <td>Approved</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Maternity</td>
-                                                <td>10</td>
-                                                <td>30th  Mar. 2020</td>
-                                                <td>3</td>
-                                                <td>Pending</td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
+                        </div>
+                        <div class="message_body online">
+                            <div class="message_header">
+                                <div class="user_detail">
+                                    <div class="dp">
+                                        <img src="../../assets/icons/user.png" class="" alt="img">
+                                    </div>
+                                    <div class="_oth">
+                                        <div class="name">
+                                            Iyere Festus
+                                        </div>
+                                        <div class="status">
+                                            online
+                                        </div>
+                                        
+                                    </div>
                                 </div>
 
                             </div>
+                            <div class="message_main">
+                                <div class="_msg out">
+                                    <div class="_inr">
+                                        <div class="_cnt">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, eius.
+                                        </div>
+                                        <div class="_tme">
+                                            10:10pm
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_msg out">
+                                    <div class="_inr">
+                                        <div class="_cnt">
+                                             adipisicing elit. Eum, eius.
+                                        </div>
+                                        <div class="_tme">
+                                            10:10pm
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_msg out">
+                                    <div class="_inr">
+                                        <div class="_cnt">
+                                            Lorem ipsum dolor  adipisicing elit. Eum, eius.
+                                        </div>
+                                        <div class="_tme">
+                                            10:10pm
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_msg in">
+                                    <div class="_inr">
+                                        <div class="_cnt">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, eius.
+                                        </div>
+                                        <div class="_tme">
+                                            10:10pm
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_msg in">
+                                    <div class="_inr">
+                                        <div class="_cnt">
+                                            Lorem ipsum dolor  adipisicing elit. Eum, eius.
+                                        </div>
+                                        <div class="_tme">
+                                            10:10pm
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_msg in">
+                                    <div class="_inr">
+                                        <div class="_cnt">
+                                            Lorem Eum, eius.
+                                        </div>
+                                        <div class="_tme">
+                                            10:10pm
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_msg out">
+                                    <div class="_inr">
+                                        <div class="_cnt">
+                                            Lorem ipsum dolor elit. Eum, eius.
+                                        </div>
+                                        <div class="_tme">
+                                            10:10pm
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_msg in">
+                                    <div class="_inr">
+                                        <div class="_cnt">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, eius.
+                                        </div>
+                                        <div class="_tme">
+                                            10:10pm
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_msg out">
+                                    <div class="_inr">
+                                        <div class="_cnt">
+                                            Lorem ipsum dolor  adipisicing elit. Eum, eius.
+                                        </div>
+                                        <div class="_tme">
+                                            10:10pm
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message_compose">
+                                <input type="text" placeholder="Type a message">
+                                <button title="Send">
+                                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.0123616 1.85742L0 10.5241L18.5714 13.0003L0 15.4765L0.0123616 24.1431L26 13.0003L0.0123616 1.85742Z"
+                                            fill="currentColor" />
+                                    </svg>
+
+                                </button>
+
+                            </div>
+
                         </div>
                     </div>
                 </div>
 
             </div>
             <!-- Page Contents Ends -->
-
-                        <!-- Custom Modal -->
-                        <div class="modal fade" id="deleteConfirmationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                              <div class="modal-content">
-                                <div class="modal-body">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    <img src="../../assets/images/deleteModal.svg" class="image" alt="">
-                                    <p>Are you sure you want to delete this Leave Category? </p>
-                                  <div class="modal-buttons">
-                                      <button type="button" class="button secondary" data-dismiss="modal">No, Cancel</button>
-                                      <button type="button" class="button primary">Yes, Delete</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
 
             <!-- Footer Begins -->
             <footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-center">

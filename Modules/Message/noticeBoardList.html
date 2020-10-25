@@ -83,7 +83,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link active">
+                        <a href="" class="nav-link">
                             <!-- <i class="link-icon" data-feather="users"></i> -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-id" width="25"
                                 height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none"
@@ -139,7 +139,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="" class="nav-link active">
                             <!-- <i class="link-icon" data-feather="x-square"></i> -->
                             <svg width="25" height="25" viewBox="0 0 44 44" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -530,65 +530,51 @@
             <div class="page-content">
                 <div class="page-content-title">
                     <button class="page-hamburger" id="page-hamburger">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#2e343b" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#2e343b" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" />
                             <circle cx="12" cy="12" r="1" />
                             <circle cx="12" cy="19" r="1" />
                             <circle cx="12" cy="5" r="1" />
                         </svg>
                     </button>
                     <div>
-                       Employee Management
+                        Message
                     </div>
                 </div>
                 <div class="page-content-inner">
                     <div class="inner-nav">
                         <nav class="nav">
-                            <a href="profileManagement.html" class="navlist">
+                            <a href="" class="navlist">
                                 <div class="content">
-                                    <div class="title">Profile Mangement</div>
+                                    <div class="title">Chat</div>
                                     <div class="details text-muted">
-                                        Details about an employee
+                                        Send, Recieve and View Messages
                                     </div>
                                 </div>
                             </a>
-                            <a href="employeeLeaveView.html" class="navlist">
+                            <a href="" class="navlist">
                                 <div class="content">
-                                    <div class="title">Employee Leave History</div>
+                                    <div class="title">Notifications</div>
                                     <div class="details text-muted">
-                                        histories of employees
+                                        View notifications
                                     </div>
                                 </div>
                             </a>
-                            <a href="employeeExitView.html" class="navlist active">
+                            <a href="" class="navlist active">
                                 <div class="content">
-                                    <div class="title">Employee Exit</div>
+                                    <div class="title">Notice Board</div>
                                     <div class="details text-muted">
-                                        Details about employee exit
+                                        View notice board
                                     </div>
                                 </div>
                             </a>
-                            <a href="employeeTaxExemptionView.html" class="navlist">
+                            <a href="" class="navlist">
                                 <div class="content">
-                                    <div class="title">Employee Tax exemption</div>
+                                    <div class="title">Memo</div>
                                     <div class="details text-muted">
-                                        Details about tax exemption
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="awardsView.html" class="navlist">
-                                <div class="content">
-                                    <div class="title">Commendation/Awards</div>
-                                    <div class="details text-muted">
-                                        Details about employee awards
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="queriesView.html" class="navlist">
-                                <div class="content">
-                                    <div class="title">Queries</div>
-                                    <div class="details text-muted">
-                                        Details about employee queries
+                                        Create and View Memo
                                     </div>
                                 </div>
                             </a>
@@ -597,115 +583,228 @@
 
                     <div class="inner-page">
                         <div class="my-card">
-                            <div class="my-card-header">
-                                Employee Leave History
+                            <div class="my-card-header flex">
+                                <div>
+                                    Notice Board / Events
+                                </div>
+                                <div class="right">
+                                    <a href="noticeBoardAdd.html" class="button secondary ">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-plus" width="20" height="20"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f6368" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z"></path>
+                                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                        Add Notice
+                                    </a>
+                                    <select name="" id="" class="filter">
+                                        <option value="">Filter</option>
+                                        <option value="">Time</option>
+                                        <option value="">Internatino</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="my-card-body">
+                                <div class="notice-board-list">
+                                    <a href="noticeDetails.html" class="notice unread">
+                                        <div class="check">
+                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2"
+                                                required>
 
-                                <div class="mini-card">
-                                    <div class="mini-card-header">
-                                        Employee Leave information
-                                    </div>
-                                    <div class="form-group ">
-                                        <label for="inputState">Employees Name</label>
-                                        <select id="inputState" class="form-control is-invalid">
-                                            <option selected="">Choose...</option>
-                                            <option>Ifeanyi Festus</option>
-                                            <option>Ifeanyi Iyere</option>
-                                            <option>Festus Iyere</option>
-                                        </select>
-                                        <div class="invalid-feedback">
-                                            Please select an option
-                                          </div>                
-                                    </div>                                    
-                                </div>
-
-                                <div class=" form-button">
-                                    <a href="" class="button primary mr-3">
-                                        Show
+                                        </div>
+                                        <div class="nme">
+                                            All
+                                        </div>
+                                        <div class="dtl">
+                                            A training will hold for all department which is important for employees to
+                                            be in
+                                        </div>
+                                        <div class="date">
+                                            9 days ago
+                                        </div>
+                                        <span class="status"></span>
                                     </a>
-                                </div>    
+                                    <a href="noticeDetails.html" class="notice unread">
+                                        <div class="check">
+                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2"
+                                                required>
 
-                                <div class="table-div">
-                                    <table class="my-table leave">
-                                        <thead>
-                                            <tr>
-                                                <th>Leave type</th>
-                                                <th>No. of Days</th>
-                                                <th>Date of leave</th>
-                                                <th>No. of Outstanding Leave</th>
-                                                <th>Status</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Maternity</td>
-                                                <td>10</td>
-                                                <td>30th  Mar. 2020</td>
-                                                <td>3</td>
-                                                <td>Approved</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Maternity</td>
-                                                <td>10</td>
-                                                <td>30th  Mar. 2020</td>
-                                                <td>3</td>
-                                                <td>Rejected</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Maternity</td>
-                                                <td>10</td>
-                                                <td>30th  Mar. 2020</td>
-                                                <td>3</td>
-                                                <td>Pending</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Maternity</td>
-                                                <td>10</td>
-                                                <td>30th  Mar. 2020</td>
-                                                <td>3</td>
-                                                <td>Pending</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Maternity</td>
-                                                <td>10</td>
-                                                <td>30th  Mar. 2020</td>
-                                                <td>3</td>
-                                                <td>Rejected</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Maternity</td>
-                                                <td>10</td>
-                                                <td>30th  Mar. 2020</td>
-                                                <td>3</td>
-                                                <td>Approved</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Maternity</td>
-                                                <td>10</td>
-                                                <td>30th  Mar. 2020</td>
-                                                <td>3</td>
-                                                <td>Pending</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Maternity</td>
-                                                <td>10</td>
-                                                <td>30th  Mar. 2020</td>
-                                                <td>3</td>
-                                                <td>Approved</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Maternity</td>
-                                                <td>10</td>
-                                                <td>30th  Mar. 2020</td>
-                                                <td>3</td>
-                                                <td>Pending</td>
-                                            </tr>
+                                        </div>
+                                        <div class="nme">
+                                            All
+                                        </div>
+                                        <div class="dtl">
+                                            A training will hold for all department which is important for employees to
+                                            be in
+                                        </div>
+                                        <div class="date">
+                                            9 days ago
+                                        </div>
+                                        <span class="status"></span>
+                                    </a>
+                                    <a href="noticeDetails.html" class="notice unread">
+                                        <div class="check">
+                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2"
+                                                required>
 
-                                        </tbody>
-                                    </table>
+                                        </div>
+                                        <div class="nme">
+                                            All
+                                        </div>
+                                        <div class="dtl">
+                                            A training will hold for all department which is important for employees to
+                                            be in
+                                        </div>
+                                        <div class="date">
+                                            9 days ago
+                                        </div>
+                                        <span class="status"></span>
+                                    </a>
+                                    <a href="noticeDetails.html" class="notice unread">
+                                        <div class="check">
+                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2"
+                                                required>
+
+                                        </div>
+                                        <div class="nme">
+                                            Finance Department
+                                        </div>
+                                        <div class="dtl">
+                                            A training will hold for all department which is important for employees to
+                                            be in
+                                        </div>
+                                        <div class="date">
+                                            9 days ago
+                                        </div>
+                                        <span class="status"></span>
+                                    </a>
+                                    <a href="noticeDetails.html" class="notice unread">
+                                        <div class="check">
+                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2"
+                                                required>
+
+                                        </div>
+                                        <div class="nme">
+                                            Research Depart...
+                                        </div>
+                                        <div class="dtl">
+                                            A training will hold for all department which is important for employees to
+                                            be in
+                                            A training will hold for all department which is important for employees to
+                                            be in
+                                        </div>
+                                        <div class="date">
+                                            9 days ago
+                                        </div>
+                                        <span class="status"></span>
+                                    </a>
+                                    <a href="noticeDetails.html" class="notice">
+                                        <div class="check">
+                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2"
+                                                required>
+
+                                        </div>
+                                        <div class="nme">
+                                            All
+                                        </div>
+                                        <div class="dtl">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto soluta
+                                            quam debitis beatae? Saepe recusandae cum reprehenderit pariatur suscipit
+                                            facere a, in delectus, culpa mollitia dolorum voluptatum ad ea! Maiores eos
+                                            voluptas quo neque. Libero labore voluptatibus ea qui quo fugiat totam
+                                            doloremque incidunt suscipit ut? Dolorum, adipisci eligendi. Eius explicabo
+                                            amet maxime similique dolorem perferendis impedit! Atque iste, iure eum
+                                            exercitationem blanditiis quisquam error sed eius beatae non! Cum alias, qui
+                                            fuga, porro ipsam cumque cupiditate eaque sunt doloribus beatae eligendi
+                                            corporis minus provident quaerat rem. Tempora asperiores praesentium odit
+                                            vel consequatur animi maiores cum impedit? Accusantium, cum nulla!
+                                        </div>
+                                        <div class="date">
+                                            9 days ago
+                                        </div>
+                                        <span class="status"></span>
+                                    </a>
+                                    <a href="noticeDetails.html" class="notice">
+                                        <div class="check">
+                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2"
+                                                required>
+
+                                        </div>
+                                        <div class="nme">
+                                            All
+                                        </div>
+                                        <div class="dtl">
+                                            A training will hold for all department which is important for employees to
+                                            be in
+                                        </div>
+                                        <div class="date">
+                                            9 days ago
+                                        </div>
+                                    </a>
+                                    <a href="noticeDetails.html" class="notice">
+                                        <div class="check">
+                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2"
+                                                required>
+
+                                        </div>
+                                        <div class="nme">
+                                            Finance Department
+                                        </div>
+                                        <div class="dtl">
+                                            A training will hold for all department which is important for employees to
+                                            be in
+                                        </div>
+                                        <div class="date">
+                                            9 days ago
+                                        </div>
+                                    </a>
+                                    <a href="noticeDetails.html" class="notice">
+                                        <div class="check">
+                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2"
+                                                required>
+
+                                        </div>
+                                        <div class="nme">
+                                            Research Depart...
+                                        </div>
+                                        <div class="dtl">
+                                            A training will hold for all department which is important for employees to
+                                            be in
+                                            A training will hold for all department which is important for employees to
+                                            be in
+                                        </div>
+                                        <div class="date">
+                                            9 days ago
+                                        </div>
+                                    </a>
+                                    <a href="noticeDetails.html" class="notice">
+                                        <div class="check">
+                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2"
+                                                required>
+
+                                        </div>
+                                        <div class="nme">
+                                            All
+                                        </div>
+                                        <div class="dtl">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto soluta
+                                            quam debitis beatae? Saepe recusandae cum reprehenderit pariatur suscipit
+                                            facere a, in delectus, culpa mollitia dolorum voluptatum ad ea! Maiores eos
+                                            voluptas quo neque. Libero labore voluptatibus ea qui quo fugiat totam
+                                            doloremque incidunt suscipit ut? Dolorum, adipisci eligendi. Eius explicabo
+                                            amet maxime similique dolorem perferendis impedit! Atque iste, iure eum
+                                            exercitationem blanditiis quisquam error sed eius beatae non! Cum alias, qui
+                                            fuga, porro ipsam cumque cupiditate eaque sunt doloribus beatae eligendi
+                                            corporis minus provident quaerat rem. Tempora asperiores praesentium odit
+                                            vel consequatur animi maiores cum impedit? Accusantium, cum nulla!
+                                        </div>
+                                        <div class="date">
+                                            9 days ago
+                                        </div>
+                                    </a>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -713,25 +812,6 @@
 
             </div>
             <!-- Page Contents Ends -->
-
-                        <!-- Custom Modal -->
-                        <div class="modal fade" id="deleteConfirmationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                              <div class="modal-content">
-                                <div class="modal-body">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    <img src="../../assets/images/deleteModal.svg" class="image" alt="">
-                                    <p>Are you sure you want to delete this Leave Category? </p>
-                                  <div class="modal-buttons">
-                                      <button type="button" class="button secondary" data-dismiss="modal">No, Cancel</button>
-                                      <button type="button" class="button primary">Yes, Delete</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
 
             <!-- Footer Begins -->
             <footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-center">
