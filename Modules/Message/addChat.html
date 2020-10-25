@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>BMAC - HR Payroll</title>
+
+    <link rel="shortcut icon" href="../../assets/icons/favicon.png" />
+
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../../assets/css/animations.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!-- End layout styles -->
+
+</head>
+
+<body>
+    <div class="main-wrapper">
+
+        <!-- Sidebar Begins -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-toggler">
+                    <div class="sidebar-toggler-box">
+                        <div class="sidebar-toggler-icon"></div>
+                    </div>
+                </div>
+                <div class="sidebar-logo">
+                    <a href="../../index.html" class="sidebar-brand">
+                        <img src="../../assets/images/logo.png" alt="BMAC">
+                    </a>
+                </div>
+                <button id="nav-toggler-close" class="nav-toggler-close">
+                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2.16116" y="0.539848" width="28" height="3" rx="1.5"
+                            transform="rotate(45 2.16116 0.539848)" fill="#047B40"></rect>
+                        <rect x="0.039856" y="20.3388" width="28" height="3" rx="1.5"
+                            transform="rotate(-45 0.039856 20.3388)" fill="#047B40"></rect>
+                    </svg>
+                </button>
+            </div>
+            <div class="sidebar-body">
+                <ul class="nav">
+                    <li class="nav-item ">
+                        <a href="../../index.html" class="nav-link">
+                            <!-- <i class="link-icon" data-feather="home"></i> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dashboard"
+                                width="25" height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" />
+                                <circle cx="12" cy="13" r="2" />
+                                <line x1="13.45" y1="11.55" x2="15.5" y2="9.5" />
+                                <path d="M6.4 20a9 9 0 1 1 11.2 0Z" />
+                            </svg>
+                            <span class="link-title">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <!-- <i class="link-icon" data-feather="search"></i> -->
+                            <svg width="25" height="25" viewBox="0 0 44 44" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14 20.1667C18.0501 20.1667 21.3334 16.8834 21.3334 12.8333C21.3334 8.78325 18.0501 5.5 14 5.5C9.94993 5.5 6.66669 8.78325 6.66669 12.8333C6.66669 16.8834 9.94993 20.1667 14 20.1667Z"
+                                    stroke="#2C3E50" stroke-width="1.83333" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M3 38.5V34.8333C3 32.8884 3.77262 31.0232 5.14788 29.6479C6.52315 28.2726 8.38841 27.5 10.3333 27.5H17.6667C19.6116 27.5 21.4768 28.2726 22.8521 29.6479C24.2274 31.0232 25 32.8884 25 34.8333V38.5"
+                                    stroke="#2C3E50" stroke-width="1.83333" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M29 25C31.2091 25 33 23.2091 33 21C33 18.7909 31.2091 17 29 17C26.7909 17 25 18.7909 25 21C25 23.2091 26.7909 25 29 25Z"
+                                    stroke="#2C3E50" stroke-width="1.83333" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M35 28L32 24" stroke="#2C3E50" stroke-width="1.83333" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span class="link-title">Recruitment</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <!-- <i class="link-icon" data-feather="users"></i> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-id" width="25"
+                                height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" />
+                                <rect x="3" y="4" width="18" height="16" rx="3" />
+                                <circle cx="9" cy="10" r="2" />
+                                <line x1="15" y1="8" x2="17" y2="8" />
+                                <line x1="15" y1="12" x2="17" y2="12" />
+                                <line x1="7" y1="16" x2="17" y2="16" />
+                            </svg>
+                            <span class="link-title">Employee Mangement</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <!-- <i class="link-icon" data-feather="trello"></i> -->
+                            <svg width="25" height="25" viewBox="0 0 44 44" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14 20.1667C18.0501 20.1667 21.3334 16.8834 21.3334 12.8333C21.3334 8.78325 18.0501 5.5 14 5.5C9.94993 5.5 6.66669 8.78325 6.66669 12.8333C6.66669 16.8834 9.94993 20.1667 14 20.1667Z"
+                                    stroke="#2C3E50" stroke-width="1.83333" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M3 38.5V34.8333C3 32.8884 3.77262 31.0232 5.14788 29.6479C6.52315 28.2726 8.38841 27.5 10.3333 27.5H17.6667C19.6116 27.5 21.4768 28.2726 22.8521 29.6479C24.2274 31.0232 25 32.8884 25 34.8333V38.5"
+                                    stroke="#2C3E50" stroke-width="1.83333" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M28.3333 20H25.6667C25.2985 20 25 20.3358 25 20.75V25.25C25 25.6642 25.2985 26 25.6667 26H28.3333C28.7015 26 29 25.6642 29 25.25V20.75C29 20.3358 28.7015 20 28.3333 20Z"
+                                    stroke="#2C3E50" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M33.1667 17H29.8333C29.3731 17 29 17.3358 29 17.75V25.25C29 25.6642 29.3731 26 29.8333 26H33.1667C33.6269 26 34 25.6642 34 25.25V17.75C34 17.3358 33.6269 17 33.1667 17Z"
+                                    stroke="#2C3E50" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M37.3333 14H34.6667C34.2985 14 34 14.3358 34 14.75V25.25C34 25.6642 34.2985 26 34.6667 26H37.3333C37.7015 26 38 25.6642 38 25.25V14.75C38 14.3358 37.7015 14 37.3333 14Z"
+                                    stroke="#2C3E50" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                            <span class="link-title">Performance Management</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <!-- <i class="link-icon" data-feather="clock"></i> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock"
+                                width="25" height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" />
+                                <circle cx="12" cy="12" r="9" />
+                                <polyline points="12 7 12 12 15 15" />
+                            </svg>
+                            <span class="link-title">Time and Attendance</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link active">
+                            <!-- <i class="link-icon" data-feather="x-square"></i> -->
+                            <svg width="25" height="25" viewBox="0 0 44 44" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14 20.1667C18.0501 20.1667 21.3334 16.8834 21.3334 12.8333C21.3334 8.78325 18.0501 5.5 14 5.5C9.94993 5.5 6.66669 8.78325 6.66669 12.8333C6.66669 16.8834 9.94993 20.1667 14 20.1667Z"
+                                    stroke="#2C3E50" stroke-width="1.83333" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M3 38.5V34.8333C3 32.8884 3.77262 31.0232 5.14788 29.6479C6.52315 28.2726 8.38841 27.5 10.3333 27.5H17.6667C19.6116 27.5 21.4768 28.2726 22.8521 29.6479C24.2274 31.0232 25 32.8884 25 34.8333V38.5"
+                                    stroke="#2C3E50" stroke-width="1.83333" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M36.5 14H27.5C26.6716 14 26 14.6716 26 15.5V24.5C26 25.3284 26.6716 26 27.5 26H36.5C37.3284 26 38 25.3284 38 24.5V15.5C38 14.6716 37.3284 14 36.5 14Z"
+                                    stroke="#2C3E50" stroke-width="1.83333" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M34 19L31 22M31 19L34 22L31 19Z" stroke="#2C3E50" stroke-width="1.83333"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span class="link-title">Absence and Leave</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <!-- <i class="link-icon" data-feather="trending-up"></i> -->
+                            <svg width="25" height="25" viewBox="0 0 44 44" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14 20.1667C18.0501 20.1667 21.3334 16.8834 21.3334 12.8333C21.3334 8.78325 18.0501 5.5 14 5.5C9.94993 5.5 6.66669 8.78325 6.66669 12.8333C6.66669 16.8834 9.94993 20.1667 14 20.1667Z"
+                                    stroke="#2C3E50" stroke-width="1.83333" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M3 38.5V34.8333C3 32.8884 3.77262 31.0232 5.14788 29.6479C6.52315 28.2726 8.38841 27.5 10.3333 27.5H17.6667C19.6116 27.5 21.4768 28.2726 22.8521 29.6479C24.2274 31.0232 25 32.8884 25 34.8333V38.5"
+                                    stroke="#2C3E50" stroke-width="1.83333" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M34.625 15H26.375C25.6156 15 25 15.3918 25 15.875V21.125C25 21.6082 25.6156 22 26.375 22H34.625C35.3844 22 36 21.6082 36 21.125V15.875C36 15.3918 35.3844 15 34.625 15Z"
+                                    stroke="#2C3E50" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M30.338 21.8095L28.7143 28" stroke="#2C3E50" stroke-width="1.83333"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M30.5714 21.8095L32.6775 27.933" stroke="#2C3E50" stroke-width="1.83333"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                            <span class="link-title">Training and Development</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <!-- <i class="link-icon" data-feather="book-open"></i> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card"
+                                width="25" height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" />
+                                <rect x="3" y="5" width="18" height="14" rx="3" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                                <line x1="7" y1="15" x2="7.01" y2="15" />
+                                <line x1="11" y1="15" x2="13" y2="15" />
+                            </svg>
+                            <span class="link-title">Payroll Management </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <!-- <i class="link-icon" data-feather="message-square"></i> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-2"
+                                width="25" height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" />
+                                <path
+                                    d="M12 20l-3 -3h-2a3 3 0 0 1 -3 -3v-6a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-2l-3 3" />
+                                <line x1="8" y1="9" x2="16" y2="9" />
+                                <line x1="8" y1="13" x2="14" y2="13" />
+                            </svg>
+                            <span class="link-title">Message</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Settings/myProfileView.html" class="nav-link">
+                            <!-- <i class="link-icon" data-feather="settings"></i> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings"
+                                width="25" height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" />
+                                <path
+                                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                            <span class="link-title">Settings</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <!-- <i class="link-icon" data-feather="archive"></i> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tax" width="25"
+                                height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" />
+                                <line x1="9" y1="14" x2="15" y2="8" />
+                                <circle cx="9.5" cy="8.5" r=".5" fill="currentColor" />
+                                <circle cx="14.5" cy="13.5" r=".5" fill="currentColor" />
+                                <path
+                                    d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2" />
+                            </svg>
+                            <span class="link-title">Reports</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <!-- Sidebar Ends -->
+
+
+        <div class="page-wrapper">
+
+            <!-- Navbar Begins -->
+            <nav class="navbar">
+                <div class="sidebar-toggler mobile">
+                    <div class="sidebar-toggler-box">
+                        <div class="sidebar-toggler-icon"></div>
+                    </div>
+                </div>
+                <div class="navbar-content">
+                    <ul class="navbar-nav">
+                        <li class="nav-item nav-company">
+                            <div>Sam Afemikhe Firm</div>
+                        </li>
+                        <li class="nav-item dropdown nav-messages">
+                            <a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-2"
+                                    width="25" height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" />
+                                    <path
+                                        d="M12 20l-3 -3h-2a3 3 0 0 1 -3 -3v-6a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-2l-3 3" />
+                                    <line x1="8" y1="9" x2="16" y2="9" />
+                                    <line x1="8" y1="13" x2="14" y2="13" />
+                                </svg>
+                                <div class="ring"></div>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="messageDropdown">
+                                <div class="dropdown-header">
+                                    <div class="head">
+                                        Messages
+                                    </div>
+                                </div>
+                                <div class="dropdown-body">
+                                    <div class="dropdown-item-bef">
+                                        <a href="javascript:;" class="dropdown-item">
+                                            <div class="figure">
+                                                <img src="../../assets/icons/user.png" alt="userr">
+                                            </div>
+                                            <div class="content">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <p>Leonardo Payne</p>
+                                                    <p class="sub-text text-muted">2 min ago</p>
+                                                </div>
+                                                <p class="sub-text text-muted">Project status</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-item-bef">
+                                        <a href="javascript:;" class="dropdown-item">
+                                            <div class="figure">
+                                                <img src="../../assets/icons/user.png" alt="userr">
+                                            </div>
+                                            <div class="content">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <p>Carl Henson</p>
+                                                    <p class="sub-text text-muted">30 min ago</p>
+                                                </div>
+                                                <p class="sub-text text-muted">Client meeting</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-item-bef">
+                                        <a href="javascript:;" class="dropdown-item">
+                                            <div class="figure">
+                                                <img src="../../assets/icons/user.png" alt="userr">
+                                            </div>
+                                            <div class="content">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <p>Jensen Combs</p>
+                                                    <p class="sub-text text-muted">1 hrs ago</p>
+                                                </div>
+                                                <p class="sub-text text-muted">Project updates</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-item-bef">
+                                        <a href="javascript:;" class="dropdown-item">
+                                            <div class="figure">
+                                                <img src="../../assets/icons/user.png" alt="userr">
+                                            </div>
+                                            <div class="content">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <p>Amiah Burton</p>
+                                                    <p class="sub-text text-muted">2 hrs ago</p>
+                                                </div>
+                                                <p class="sub-text text-muted">Project deadline</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-item-bef">
+                                        <a href="javascript:;" class="dropdown-item">
+                                            <div class="figure">
+                                                <img src="../../assets/icons/user.png" alt="userr">
+                                            </div>
+                                            <div class="content">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <p>Yaretzi Mayo</p>
+                                                    <p class="sub-text text-muted">5 hr ago</p>
+                                                </div>
+                                                <p class="sub-text text-muted">New record</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="dropdown-footer d-flex align-items-center justify-content-center">
+                                    <a href="javascript:;" class="">View all</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown nav-notifications">
+                            <a class="nav-link dropdown-toggle" href="#" id="notificationDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bell"
+                                    width="25" height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" />
+                                    <path
+                                        d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
+                                    <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+                                </svg>
+                                <div class="ring"></div>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="notificationDropdown">
+                                <div class="dropdown-header">
+                                    <div class="head">
+                                        Nofications
+                                    </div>
+                                </div>
+                                <div class="dropdown-body">
+                                    <div class="dropdown-item-bef">
+                                        <a href="javascript:;" class="dropdown-item">
+                                            <div class="content">
+                                                <p>New customer registered</p>
+                                                <p class="sub-text text-muted">2 sec ago</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-item-bef">
+                                        <a href="javascript:;" class="dropdown-item">
+                                            <div class="content">
+                                                <p>New Order Recieved</p>
+                                                <p class="sub-text text-muted">30 min ago</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-item-bef">
+                                        <a href="javascript:;" class="dropdown-item">
+                                            <div class="content">
+                                                <p>Server Limit Reached!</p>
+                                                <p class="sub-text text-muted">1 hrs ago</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-item-bef">
+                                        <a href="javascript:;" class="dropdown-item">
+                                            <div class="content">
+                                                <p>Apps are ready for update</p>
+                                                <p class="sub-text text-muted">5 hrs ago</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-item-bef">
+                                        <a href="javascript:;" class="dropdown-item">
+                                            <div class="content">
+                                                <p>Download completed</p>
+                                                <p class="sub-text text-muted">6 hrs ago</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown nav-profile">
+                            <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../../assets/icons/user.png" class="user-image" alt="profile">
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="profileDropdown">
+                                <div class="top">
+                                    <a href="javascript:;" class="dropdown-item">
+                                        <div class="content">
+                                            <div class="figure">
+                                                <img src="../../assets/icons/user.png" alt="">
+                                            </div>
+                                            <div class="info">
+                                                <p class="">Iyere Ifeany Festus</p>
+                                                <p class="text-muted">Sam Afemikhe Firm</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <hr>
+
+                                <a href="javascript:;" class="dropdown-item">
+                                    <div class="content">
+                                        <div class="thumb">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                class="icon icon-tabler icon-tabler-photo" width="20" height="20"
+                                                viewBox="0 0 24 24" stroke-width="1" stroke="#2e343b" fill="none"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" />
+                                                <line x1="15" y1="8" x2="15.01" y2="8" />
+                                                <rect x="4" y="4" width="16" height="16" rx="3" />
+                                                <path d="M4 15l4 -4a3 5 0 0 1 3 0l 5 5" />
+                                                <path d="M14 14l1 -1a3 5 0 0 1 3 0l 2 2" />
+                                            </svg>
+                                        </div>
+                                        <p>My Profile</p>
+                                    </div>
+                                </a>
+
+                                <a href="javascript:;" class="dropdown-item">
+                                    <div class="content">
+                                        <div class="thumb">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                class="icon icon-tabler icon-tabler-settings" width="20" height="20"
+                                                viewBox="0 0 24 24" stroke-width="1" stroke="#2e343b" fill="none"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" />
+                                                <path
+                                                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                                <circle cx="12" cy="12" r="3" />
+                                            </svg> </div>
+                                        <p>Company Settings</p>
+                                    </div>
+                                </a>
+
+                                <a href="javascript:;" class="dropdown-item">
+                                    <div class="content">
+                                        <div class="thumb">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                class="icon icon-tabler icon-tabler-help" width="20" height="20"
+                                                viewBox="0 0 24 24" stroke-width="1" stroke="#2e343b" fill="none"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" />
+                                                <circle cx="12" cy="12" r="9" />
+                                                <line x1="12" y1="17" x2="12" y2="17.01" />
+                                                <path d="M12 13.5a1.5 1.5 0 0 1 1 -1.5a2.6 2.6 0 1 0 -3 -4" />
+                                            </svg>
+                                        </div>
+                                        <p>Help and Support</p>
+                                    </div>
+                                </a>
+
+                                <hr>
+
+                                <a href="javascript:;" class="dropdown-item">
+                                    <div class="content">
+                                        <div class="thumb">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                class="icon icon-tabler icon-tabler-logout" width="20" height="20"
+                                                viewBox="0 0 24 24" stroke-width="1" stroke="#2e343b" fill="none"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" />
+                                                <path
+                                                    d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+                                                <path d="M7 12h14l-3 -3m0 6l3 -3" />
+                                            </svg> </div>
+                                        <p>Logout</p>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Navbar Ends -->
+
+            <!-- Page Contents Begin -->
+            <div class="page-content">
+                <div class="page-content-title">
+                    <button class="page-hamburger" id="page-hamburger">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#2e343b" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" />
+                            <circle cx="12" cy="12" r="1" />
+                            <circle cx="12" cy="19" r="1" />
+                            <circle cx="12" cy="5" r="1" />
+                        </svg>
+                    </button>
+                    <div>
+                        Message
+                    </div>
+                </div>
+                <div class="page-content-inner">
+                    <div class="inner-nav">
+                        <nav class="nav">
+                            <a href="" class="navlist active">
+                                <div class="content">
+                                    <div class="title">Chat</div>
+                                    <div class="details text-muted">
+                                        Send, Recieve and View Messages
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="navlist">
+                                <div class="content">
+                                    <div class="title">Notifications</div>
+                                    <div class="details text-muted">
+                                        View notifications
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="navlist ">
+                                <div class="content">
+                                    <div class="title">Notice Board</div>
+                                    <div class="details text-muted">
+                                        View notice board
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="navlist">
+                                <div class="content">
+                                    <div class="title">Memo</div>
+                                    <div class="details text-muted">
+                                        Create and View Memo
+                                    </div>
+                                </div>
+                            </a>
+                        </nav>
+                    </div>
+
+                    <div class="inner-page chat">
+                        <div class="new_chat">
+                            <div class="nw_">
+                                <div class="bk">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-arrow-left" width="25" height="25"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <line x1="5" y1="12" x2="19" y2="12" />
+                                        <line x1="5" y1="12" x2="11" y2="18" />
+                                        <line x1="5" y1="12" x2="11" y2="6" />
+                                    </svg>
+                                </div>
+                                <div class="tx_">
+                                    New chat
+                                </div>
+                            </div>
+                            <div class="search">
+                                <div class="search_bar">
+                                    <input type="text" placeholder="Search">
+                                </div>
+                            </div>
+                            <div class="list_main">
+                                <div class="list">
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="../../assets/icons/user.png" class="" alt="img">
+                                        </div>
+                                        <div class="name">
+                                            Iyere Festus
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="../../assets/icons/user.png" class="" alt="img">
+                                        </div>
+                                        <div class="name">
+                                            Iyere Festus
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="../../assets/icons/user.png" class="" alt="img">
+                                        </div>
+                                        <div class="name">
+                                            Iyere Festus
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="../../assets/icons/user.png" class="" alt="img">
+                                        </div>
+                                        <div class="name">
+                                            Iyere Festus
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="../../assets/icons/user.png" class="" alt="img">
+                                        </div>
+                                        <div class="name">
+                                            Iyere Festus
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="../../assets/icons/user.png" class="" alt="img">
+                                        </div>
+                                        <div class="name">
+                                            Iyere Festus
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="../../assets/icons/user.png" class="" alt="img">
+                                        </div>
+                                        <div class="name">
+                                            Iyere Festus
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="../../assets/icons/user.png" class="" alt="img">
+                                        </div>
+                                        <div class="name">
+                                            Iyere Festus
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="../../assets/icons/user.png" class="" alt="img">
+                                        </div>
+                                        <div class="name">
+                                            Iyere Festus
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="../../assets/icons/user.png" class="" alt="img">
+                                        </div>
+                                        <div class="name">
+                                            Iyere Festus
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="../../assets/icons/user.png" class="" alt="img">
+                                        </div>
+                                        <div class="name">
+                                            Iyere Festus
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="../../assets/icons/user.png" class="" alt="img">
+                                        </div>
+                                        <div class="name">
+                                            Iyere Festus
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="../../assets/icons/user.png" class="" alt="img">
+                                        </div>
+                                        <div class="name">
+                                            Iyere Festus
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="../../assets/icons/user.png" class="" alt="img">
+                                        </div>
+                                        <div class="name">
+                                            Iyere Festus
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="../../assets/icons/user.png" class="" alt="img">
+                                        </div>
+                                        <div class="name">
+                                            Iyere Festus
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message_body online">
+                            <div class="message_header">
+                                <div class="user_detail">
+                                    <div class="dp">
+                                        <img src="../../assets/icons/user.png" class="" alt="img">
+                                    </div>
+                                    <div class="_oth">
+                                        <div class="name">
+                                            Iyere Festus
+                                        </div>
+                                        <div class="status">
+                                            online
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="message_main">
+                                <div class="_msg out">
+                                    <div class="_inr">
+                                        <div class="_cnt">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, eius.
+                                        </div>
+                                        <div class="_tme">
+                                            10:10pm
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_msg out">
+                                    <div class="_inr">
+                                        <div class="_cnt">
+                                            adipisicing elit. Eum, eius.
+                                        </div>
+                                        <div class="_tme">
+                                            10:10pm
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_msg out">
+                                    <div class="_inr">
+                                        <div class="_cnt">
+                                            Lorem ipsum dolor adipisicing elit. Eum, eius.
+                                        </div>
+                                        <div class="_tme">
+                                            10:10pm
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_msg in">
+                                    <div class="_inr">
+                                        <div class="_cnt">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, eius.
+                                        </div>
+                                        <div class="_tme">
+                                            10:10pm
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_msg in">
+                                    <div class="_inr">
+                                        <div class="_cnt">
+                                            Lorem ipsum dolor adipisicing elit. Eum, eius.
+                                        </div>
+                                        <div class="_tme">
+                                            10:10pm
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_msg in">
+                                    <div class="_inr">
+                                        <div class="_cnt">
+                                            Lorem Eum, eius.
+                                        </div>
+                                        <div class="_tme">
+                                            10:10pm
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_msg out">
+                                    <div class="_inr">
+                                        <div class="_cnt">
+                                            Lorem ipsum dolor elit. Eum, eius.
+                                        </div>
+                                        <div class="_tme">
+                                            10:10pm
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_msg in">
+                                    <div class="_inr">
+                                        <div class="_cnt">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, eius.
+                                        </div>
+                                        <div class="_tme">
+                                            10:10pm
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_msg out">
+                                    <div class="_inr">
+                                        <div class="_cnt">
+                                            Lorem ipsum dolor adipisicing elit. Eum, eius.
+                                        </div>
+                                        <div class="_tme">
+                                            10:10pm
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message_compose">
+                                <input type="text" placeholder="Type a message">
+                                <button title="Send">
+                                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.0123616 1.85742L0 10.5241L18.5714 13.0003L0 15.4765L0.0123616 24.1431L26 13.0003L0.0123616 1.85742Z"
+                                            fill="currentColor" />
+                                    </svg>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Page Contents Ends -->
+
+            <!-- Footer Begins -->
+            <footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-center">
+                <p class="text-muted text-center text-md-left">Copyright © 2019 <a href="https://ikooba.com/"
+                        target="_blank">Ikooba Technologies</a>.</p>
+            </footer>
+            <!-- Footer ends -->
+
+
+        </div>
+    </div>
+
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/bootstrap.js"></script>
+    <script src="../../assets/js/popper.min.js"></script>
+    <script src="../../assets/js/perfect-scrollbar.js"></script>
+    <script src="../../assets/js/feather.js"></script>
+
+    <!-- Custom Script -->
+    <script src="../../assets/js/main.js"></script>
+
+</body>
+
+</html>
